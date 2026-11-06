@@ -1,0 +1,1869 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "artifact-identity",
+      "title": "Artifacts and provenance",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "artifacts",
+        "hashes",
+        "provenance"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match; Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Identify exact bytes, distinguish integrity from origin, and recognize the incomplete local IPSW.",
+      "path": "articles/artifact-identity.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/ios-learning.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/ipsw-validation.json",
+        "case://local/android-ios-reverse-lab/ipsw-local-headers.json"
+      ],
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext",
+        "https://github.com/CRKatri/trustcache/blob/aa0e8847529cf76576fce8d2dbc9e088c8f1a0df/trustcache.h",
+        "https://github.com/tihmstar/img4tool",
+        "https://support.apple.com/en-gb/guide/security/sec59b0b31ff/web",
+        "https://support.apple.com/en-ie/guide/security-pdf/secb3000f149/web",
+        "https://support.apple.com/ro-md/guide/security/sec87fc038c2/web"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage."
+      ],
+      "sha256": "8972719d471e01100766931f365b473fb61d00fb868a5cb0807ef8dab415dba0"
+    },
+    {
+      "id": "boot-stage-handoffs",
+      "title": "Boot stages and handoffs",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "boot",
+        "init",
+        "secure-boot"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match; Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Follow Android init stages and distinguish their source handoffs from Apple documented boot design.",
+      "path": "articles/boot-stage-handoffs.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/android/init-main.cpp",
+        "case://local/android-ios-reverse-lab/android/first-stage-init.cpp"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/guide/components/activities/activity-lifecycle",
+        "https://developer.android.com/guide/components/processes-and-threads",
+        "https://developer.android.com/guide/platform/index.html",
+        "https://source.android.com/docs/core/architecture/aidl",
+        "https://source.android.com/docs/core/architecture/ipc/binder-overview",
+        "https://source.android.com/docs/core/runtime",
+        "https://source.android.com/docs/core/runtime/jit-compiler",
+        "https://source.android.com/docs/core/runtime/zygote",
+        "https://source.android.com/docs/security/app-sandbox"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Pinned source observation does not establish behavior of the selected shipped binary or device."
+      ],
+      "sha256": "c775c7a873ce533ee3db625031ca58a87f7d690339f9b83bfc8680957759b052"
+    },
+    {
+      "id": "code-representations",
+      "title": "Source, bytecode and machine code",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "dex",
+        "decompilation",
+        "native-code"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Historical AOSP HelloActivity prebuilt (version P/27, target SDK 23) retained in Android17 r1 tag; not Android17 system app",
+      "summary": "Separate authored source, DEX, machine code and reconstructed text using a real APK method.",
+      "path": "articles/code-representations.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/tooling/hello-oncreate-evidence.json"
+      ],
+      "sourceUrls": [
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/ApiDemos/assets/HelloActivity.apk",
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/HelloActivity/src/com/example/android/helloactivity/HelloActivity.java",
+        "https://developer.android.com/reference/android/app/Activity#onCreate(android.os.Bundle)"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage."
+      ],
+      "sha256": "6f5533e9eea8a7a96dc459144c7d3f36f42eebe0636016889a85f2e6b0b9c01d"
+    },
+    {
+      "id": "drivers-device-boundaries",
+      "title": "Drivers and device-specific boundaries",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "drivers",
+        "vendor",
+        "gsi"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match; Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Understand why generic system metadata cannot reveal every vendor driver, modem or coprocessor.",
+      "path": "articles/drivers-device-boundaries.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/android/remote-inventory.json"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/topic/performance/power/power-details",
+        "https://source.android.com/docs/core/architecture/hal",
+        "https://source.android.com/docs/core/architecture/kernel/generic-kernel-image",
+        "https://source.android.com/docs/core/audio",
+        "https://source.android.com/docs/core/camera/camera3",
+        "https://source.android.com/docs/core/graphics/surfaceflinger-windowmanager",
+        "https://source.android.com/docs/core/interaction/input",
+        "https://source.android.com/docs/core/media/media-modules",
+        "https://source.android.com/docs/core/ota/apex",
+        "https://source.android.com/docs/core/ota/modular-system",
+        "https://source.android.com/docs/core/ota/modular-system/dns-resolver",
+        "https://source.android.com/docs/core/ota/modular-system/networking",
+        "https://source.android.com/docs/core/ota/virtual_ab",
+        "https://source.android.com/docs/core/permissions/runtime_perms",
+        "https://source.android.com/docs/core/power/platform_mgmt",
+        "https://source.android.com/docs/security/features/encryption/file-based",
+        "https://source.android.com/docs/security/features/keystore"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "The central mechanism is documented design, not a recovered implementation or measurement."
+      ],
+      "sha256": "db117eea758c59263e0a122d168de2dcd2fa766354b4a63c7e6a38f3a41b357e"
+    },
+    {
+      "id": "execution-state",
+      "title": "Execution depends on state",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "runtime",
+        "conditions",
+        "configuration"
+      ],
+      "evidenceLevel": "derived",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match; Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Explain why static presence of code or a service declaration is weaker than observing a path execute.",
+      "path": "articles/execution-state.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/epoch-2/android-source/init.zygote64.rc"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/guide/components/activities/activity-lifecycle",
+        "https://developer.android.com/guide/components/processes-and-threads",
+        "https://developer.android.com/guide/platform/index.html",
+        "https://source.android.com/docs/core/architecture/aidl",
+        "https://source.android.com/docs/core/architecture/ipc/binder-overview",
+        "https://source.android.com/docs/core/runtime",
+        "https://source.android.com/docs/core/runtime/jit-compiler",
+        "https://source.android.com/docs/core/runtime/zygote",
+        "https://source.android.com/docs/security/app-sandbox"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification."
+      ],
+      "sha256": "41b3d39472c07bc915fcca47d737e4ed60fbea8361f54e7aa6aa1dfa018de2c8"
+    },
+    {
+      "id": "container-transformations",
+      "title": "Containers, filesystems and transformations",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "firmware",
+        "compression",
+        "filesystems"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match; Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Track IPSW members, IM4P wrappers and decompressed payloads without conflating decoding with execution.",
+      "path": "articles/container-transformations.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/ios-learning.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/epoch-2/ios/byte-inspection.json"
+      ],
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext",
+        "https://github.com/CRKatri/trustcache/blob/aa0e8847529cf76576fce8d2dbc9e088c8f1a0df/trustcache.h",
+        "https://github.com/tihmstar/img4tool",
+        "https://support.apple.com/en-gb/guide/security/sec59b0b31ff/web",
+        "https://support.apple.com/en-ie/guide/security-pdf/secb3000f149/web",
+        "https://support.apple.com/ro-md/guide/security/sec87fc038c2/web"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage."
+      ],
+      "sha256": "d07db0d05540636fc76d213a5bf3da4ae4e8069bc0c307c6b6a1edf5c1c91be8"
+    },
+    {
+      "id": "graphics-presentation",
+      "title": "Drawing versus displaying",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "graphics",
+        "surfaceflinger",
+        "presentation"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Separate application UI setup from buffer submission, composition and actual display presentation.",
+      "path": "articles/graphics-presentation.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-4/gpu-frame-engine.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/tooling/hello-oncreate-evidence.json",
+        "case://local/android-ios-reverse-lab/epoch-3/android-sources/main_surfaceflinger.cpp"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/games/sdk/frame-pacing",
+        "https://docs.vulkan.org/guide/latest/synchronization.html",
+        "https://source.android.com/docs/core/graphics",
+        "https://source.android.com/docs/core/graphics/arch-bq-gralloc",
+        "https://source.android.com/docs/core/graphics/surfaceflinger-windowmanager"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "The central mechanism is documented design, not a recovered implementation or measurement."
+      ],
+      "sha256": "32316deecc235913909efcb6388dff793957150e365fea6c287b45d63a9617a5"
+    },
+    {
+      "id": "hal-contracts",
+      "title": "HAL contracts and vendor implementations",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "hal",
+        "aidl",
+        "hardware"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Distinguish a hardware-interface contract from the unavailable behavior of a vendor implementation.",
+      "path": "articles/hal-contracts.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/topic/performance/power/power-details",
+        "https://source.android.com/docs/core/architecture/hal",
+        "https://source.android.com/docs/core/architecture/kernel/generic-kernel-image",
+        "https://source.android.com/docs/core/audio",
+        "https://source.android.com/docs/core/camera/camera3",
+        "https://source.android.com/docs/core/graphics/surfaceflinger-windowmanager",
+        "https://source.android.com/docs/core/interaction/input",
+        "https://source.android.com/docs/core/media/media-modules",
+        "https://source.android.com/docs/core/ota/apex",
+        "https://source.android.com/docs/core/ota/modular-system",
+        "https://source.android.com/docs/core/ota/modular-system/dns-resolver",
+        "https://source.android.com/docs/core/ota/modular-system/networking",
+        "https://source.android.com/docs/core/ota/virtual_ab",
+        "https://source.android.com/docs/core/permissions/runtime_perms",
+        "https://source.android.com/docs/core/power/platform_mgmt",
+        "https://source.android.com/docs/security/features/encryption/file-based",
+        "https://source.android.com/docs/security/features/keystore"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "The central mechanism is documented design, not a recovered implementation or measurement."
+      ],
+      "sha256": "cf1fc116273d48538eb03a4eda8398f4846bc3090e4c20517f63ebc97f42c7d6"
+    },
+    {
+      "id": "binder-ipc",
+      "title": "Binder and process boundaries",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "binder",
+        "ipc",
+        "aidl"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Trace transaction construction and driver interaction while retaining remote failure and authorization boundaries.",
+      "path": "articles/binder-ipc.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/epoch-2/android-source/IPCThreadState.cpp"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/guide/components/activities/activity-lifecycle",
+        "https://developer.android.com/guide/components/processes-and-threads",
+        "https://developer.android.com/guide/platform/index.html",
+        "https://source.android.com/docs/core/architecture/aidl",
+        "https://source.android.com/docs/core/architecture/ipc/binder-overview",
+        "https://source.android.com/docs/core/runtime",
+        "https://source.android.com/docs/core/runtime/jit-compiler",
+        "https://source.android.com/docs/core/runtime/zygote",
+        "https://source.android.com/docs/security/app-sandbox"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Pinned source observation does not establish behavior of the selected shipped binary or device."
+      ],
+      "sha256": "d5f402728c5c6dfc63bfc61b7a18ae2dc6bf394bb5ae8752c64ddd25bc80bf32"
+    },
+    {
+      "id": "queues-scheduling",
+      "title": "Jobs, queues and deferred work",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "queues",
+        "handler",
+        "scheduling"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Follow application-binding work into a handler queue and state where the retained source prefix stops.",
+      "path": "articles/queues-scheduling.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/epoch-2/android-source/ActivityThread.java.partial"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/guide/components/activities/activity-lifecycle",
+        "https://developer.android.com/guide/components/processes-and-threads",
+        "https://developer.android.com/guide/platform/index.html",
+        "https://source.android.com/docs/core/architecture/aidl",
+        "https://source.android.com/docs/core/architecture/ipc/binder-overview",
+        "https://source.android.com/docs/core/runtime",
+        "https://source.android.com/docs/core/runtime/jit-compiler",
+        "https://source.android.com/docs/core/runtime/zygote",
+        "https://source.android.com/docs/security/app-sandbox"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Pinned source observation does not establish behavior of the selected shipped binary or device."
+      ],
+      "sha256": "09d4c456595d1942c6eae6e09121da1513ed4bf2246335c2022eeb4681b3b18c"
+    },
+    {
+      "id": "keys-trust",
+      "title": "Keys, signatures and authorized trust",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "security",
+        "signatures",
+        "trust"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match; Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Separate matching digests, mathematical signature checks and authorization of a trusted signing key.",
+      "path": "articles/keys-trust.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/verified-boot-learning.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/epoch-2/avb/vbmeta-verification.json"
+      ],
+      "sourceUrls": [
+        "https://android.googlesource.com/platform/external/avb/+/refs/tags/android-17.0.0_r1/libavb/avb_vbmeta_image.h",
+        "https://source.android.com/docs/security/features/verifiedboot/avb",
+        "https://source.android.com/docs/security/features/verifiedboot/verified-boot"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage.",
+        "Embedded-key signature consistency does not establish OEM trust, rollback state or device acceptance."
+      ],
+      "sha256": "451593b13dc8d4ca3dabd2f7edc838cf51ca287d3d9e44b48e9ae387309c3062"
+    },
+    {
+      "id": "activity-process-lifecycle",
+      "title": "Activity lifecycle versus process lifetime",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "lifecycle",
+        "activity",
+        "process"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "Historical AOSP HelloActivity prebuilt (version P/27, target SDK 23) retained in Android17 r1 tag; not Android17 system app",
+      "summary": "Distinguish activity callbacks from process survival, using the sample callback without claiming runtime results.",
+      "path": "articles/activity-process-lifecycle.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/tooling/hello-package-evidence.json"
+      ],
+      "sourceUrls": [
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/ApiDemos/assets/HelloActivity.apk",
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/HelloActivity/src/com/example/android/helloactivity/HelloActivity.java",
+        "https://developer.android.com/guide/components/activities/activity-lifecycle",
+        "https://developer.android.com/reference/android/app/Activity#onCreate(android.os.Bundle)"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "The central mechanism is documented design, not a recovered implementation or measurement."
+      ],
+      "sha256": "a3ecd8f8e50a113e6ea1859564c9345c7d143ca51cee65e6e6d3e44ec2bcd567"
+    },
+    {
+      "id": "media-pipeline",
+      "title": "Media, buffers and hardware boundaries",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "media",
+        "audio",
+        "camera"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Break capture and playback into APIs, services, buffers, codecs, HALs and drivers.",
+      "path": "articles/media-pipeline.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/topic/performance/power/power-details",
+        "https://source.android.com/docs/core/architecture/hal",
+        "https://source.android.com/docs/core/architecture/kernel/generic-kernel-image",
+        "https://source.android.com/docs/core/audio",
+        "https://source.android.com/docs/core/camera/camera3",
+        "https://source.android.com/docs/core/graphics/surfaceflinger-windowmanager",
+        "https://source.android.com/docs/core/interaction/input",
+        "https://source.android.com/docs/core/media/media-modules",
+        "https://source.android.com/docs/core/ota/apex",
+        "https://source.android.com/docs/core/ota/modular-system",
+        "https://source.android.com/docs/core/ota/modular-system/dns-resolver",
+        "https://source.android.com/docs/core/ota/modular-system/networking",
+        "https://source.android.com/docs/core/ota/virtual_ab",
+        "https://source.android.com/docs/core/permissions/runtime_perms",
+        "https://source.android.com/docs/core/power/platform_mgmt",
+        "https://source.android.com/docs/security/features/encryption/file-based",
+        "https://source.android.com/docs/security/features/keystore"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "The central mechanism is documented design, not a recovered implementation or measurement."
+      ],
+      "sha256": "a02eac0b2ccdd9e13de4b28a1802f7f8139f9b50fdcf2a72be8b4b3b11934fea"
+    },
+    {
+      "id": "network-observation",
+      "title": "Network leads versus observed traffic",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "networking",
+        "evidence",
+        "transport"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Distinguish a URL string, request construction and captured transmission; no phone traffic was measured.",
+      "path": "articles/network-observation.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/android/range-receipts.json"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/topic/performance/power/power-details",
+        "https://source.android.com/docs/core/architecture/hal",
+        "https://source.android.com/docs/core/architecture/kernel/generic-kernel-image",
+        "https://source.android.com/docs/core/audio",
+        "https://source.android.com/docs/core/camera/camera3",
+        "https://source.android.com/docs/core/graphics/surfaceflinger-windowmanager",
+        "https://source.android.com/docs/core/interaction/input",
+        "https://source.android.com/docs/core/media/media-modules",
+        "https://source.android.com/docs/core/ota/apex",
+        "https://source.android.com/docs/core/ota/modular-system",
+        "https://source.android.com/docs/core/ota/modular-system/dns-resolver",
+        "https://source.android.com/docs/core/ota/modular-system/networking",
+        "https://source.android.com/docs/core/ota/virtual_ab",
+        "https://source.android.com/docs/core/permissions/runtime_perms",
+        "https://source.android.com/docs/core/power/platform_mgmt",
+        "https://source.android.com/docs/security/features/encryption/file-based",
+        "https://source.android.com/docs/security/features/keystore"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "The central mechanism is documented design, not a recovered implementation or measurement."
+      ],
+      "sha256": "839c9be9acdf1a581609e9ef2d8aa78a62f84ea5c35535d2db155c275d3f3483"
+    },
+    {
+      "id": "updates-version-boundaries",
+      "title": "OTA, Mainline and version boundaries",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "ota",
+        "apex",
+        "mainline"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Understand modular and system updates, and why Android17 r1 source is not a proven QPR1 binary match.",
+      "path": "articles/updates-version-boundaries.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/epoch-3/android-sources/apexd_main.cpp"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/topic/performance/power/power-details",
+        "https://source.android.com/docs/core/architecture/hal",
+        "https://source.android.com/docs/core/architecture/kernel/generic-kernel-image",
+        "https://source.android.com/docs/core/audio",
+        "https://source.android.com/docs/core/camera/camera3",
+        "https://source.android.com/docs/core/graphics/surfaceflinger-windowmanager",
+        "https://source.android.com/docs/core/interaction/input",
+        "https://source.android.com/docs/core/media/media-modules",
+        "https://source.android.com/docs/core/ota/apex",
+        "https://source.android.com/docs/core/ota/modular-system",
+        "https://source.android.com/docs/core/ota/modular-system/dns-resolver",
+        "https://source.android.com/docs/core/ota/modular-system/networking",
+        "https://source.android.com/docs/core/ota/virtual_ab",
+        "https://source.android.com/docs/core/permissions/runtime_perms",
+        "https://source.android.com/docs/core/power/platform_mgmt",
+        "https://source.android.com/docs/security/features/encryption/file-based",
+        "https://source.android.com/docs/security/features/keystore"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Pinned source observation does not establish behavior of the selected shipped binary or device."
+      ],
+      "sha256": "99413eb029664571814c0156eab575f0b6e3b5dc9496006f8b7ce7a664f09e98"
+    },
+    {
+      "id": "permission-checks",
+      "title": "Permissions, identity and enforcement",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "permissions",
+        "appops",
+        "security"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Follow permission-checking entry points and keep grants, caller identity and kernel policy separate.",
+      "path": "articles/permission-checks.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/epoch-3/android-sources/PermissionChecker.java"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/topic/performance/power/power-details",
+        "https://source.android.com/docs/core/architecture/hal",
+        "https://source.android.com/docs/core/architecture/kernel/generic-kernel-image",
+        "https://source.android.com/docs/core/audio",
+        "https://source.android.com/docs/core/camera/camera3",
+        "https://source.android.com/docs/core/graphics/surfaceflinger-windowmanager",
+        "https://source.android.com/docs/core/interaction/input",
+        "https://source.android.com/docs/core/media/media-modules",
+        "https://source.android.com/docs/core/ota/apex",
+        "https://source.android.com/docs/core/ota/modular-system",
+        "https://source.android.com/docs/core/ota/modular-system/dns-resolver",
+        "https://source.android.com/docs/core/ota/modular-system/networking",
+        "https://source.android.com/docs/core/ota/virtual_ab",
+        "https://source.android.com/docs/core/permissions/runtime_perms",
+        "https://source.android.com/docs/core/power/platform_mgmt",
+        "https://source.android.com/docs/security/app-sandbox",
+        "https://source.android.com/docs/security/features/encryption/file-based",
+        "https://source.android.com/docs/security/features/keystore"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Pinned source observation does not establish behavior of the selected shipped binary or device."
+      ],
+      "sha256": "e393d263e4de4bf12bf59fc842d07f78c38456437808e7dd9321e13d174c4fd3"
+    },
+    {
+      "id": "investigation-questions",
+      "title": "Questions that narrow an investigation",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "method",
+        "hypotheses",
+        "evidence"
+      ],
+      "evidenceLevel": "derived",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match; Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Turn a whole-OS goal into discriminating questions and bounded inspections.",
+      "path": "articles/investigation-questions.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/ios-learning.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md"
+      ],
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext",
+        "https://github.com/CRKatri/trustcache/blob/aa0e8847529cf76576fce8d2dbc9e088c8f1a0df/trustcache.h",
+        "https://github.com/tihmstar/img4tool",
+        "https://support.apple.com/en-gb/guide/security/sec59b0b31ff/web",
+        "https://support.apple.com/en-ie/guide/security-pdf/secb3000f149/web",
+        "https://support.apple.com/ro-md/guide/security/sec87fc038c2/web"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification."
+      ],
+      "sha256": "faa2bc8ad208b9cf78da2c1a5842257eb1574ec4ff947d74f5ac903b0bda5d9b"
+    },
+    {
+      "id": "resources-ui",
+      "title": "Resources and UI declarations",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "resources",
+        "ui",
+        "apk"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Historical AOSP HelloActivity prebuilt (version P/27, target SDK 23) retained in Android17 r1 tag; not Android17 system app",
+      "summary": "Connect a recovered layout identifier to the next resource-analysis question without claiming rendered pixels.",
+      "path": "articles/resources-ui.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/tooling/hello-oncreate-evidence.json"
+      ],
+      "sourceUrls": [
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/ApiDemos/assets/HelloActivity.apk",
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/HelloActivity/src/com/example/android/helloactivity/HelloActivity.java",
+        "https://developer.android.com/reference/android/app/Activity#onCreate(android.os.Bundle)"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage."
+      ],
+      "sha256": "f86ba089b0fa6694a2653e5007a6ddfd2f7ceb309459235d338ba2c100975757"
+    },
+    {
+      "id": "system-services",
+      "title": "System services and dependency order",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "system-server",
+        "services",
+        "boot"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Read ordered service startup, guards and failure paths instead of flattening Android into service names.",
+      "path": "articles/system-services.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/epoch-2/android-source/SystemServer.java"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/guide/components/activities/activity-lifecycle",
+        "https://developer.android.com/guide/components/processes-and-threads",
+        "https://developer.android.com/guide/platform/index.html",
+        "https://source.android.com/docs/core/architecture/aidl",
+        "https://source.android.com/docs/core/architecture/ipc/binder-overview",
+        "https://source.android.com/docs/core/runtime",
+        "https://source.android.com/docs/core/runtime/jit-compiler",
+        "https://source.android.com/docs/core/runtime/zygote",
+        "https://source.android.com/docs/security/app-sandbox"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Pinned source observation does not establish behavior of the selected shipped binary or device."
+      ],
+      "sha256": "888cbbb1978619d5e0d77cb18a2d8f73d7d582a53a275ad30b8a894afb12bf7f"
+    },
+    {
+      "id": "trust-cache-records",
+      "title": "Trust-cache records and code measurements",
+      "platform": "ios",
+      "tags": [
+        "a-z",
+        "ios",
+        "trust-cache",
+        "code-signing"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Interpret a 34-record trust-cache layout while leaving code-hash-to-file mapping and acceptance unproved.",
+      "path": "articles/trust-cache-records.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/ios-learning.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/epoch-2/ios/byte-inspection.json"
+      ],
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext",
+        "https://github.com/CRKatri/trustcache/blob/aa0e8847529cf76576fce8d2dbc9e088c8f1a0df/trustcache.h",
+        "https://github.com/tihmstar/img4tool",
+        "https://support.apple.com/en-gb/guide/security/sec59b0b31ff/web",
+        "https://support.apple.com/en-ie/guide/security-pdf/secb3000f149/web",
+        "https://support.apple.com/ro-md/guide/security/sec87fc038c2/web"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage.",
+        "No Apple signature/ticket chain, filesystem seal, actual load address or runtime enforcement was established."
+      ],
+      "sha256": "0955fa47fab7200c7862c4c1628ca3b43ba361a66f19308c22d950d6a086d2af"
+    },
+    {
+      "id": "encryption-key-state",
+      "title": "Storage encryption and key state",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "storage",
+        "encryption",
+        "keystore"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Separate filesystem parsing, decryption and authorization to use a key across device states.",
+      "path": "articles/encryption-key-state.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/topic/performance/power/power-details",
+        "https://source.android.com/docs/core/architecture/hal",
+        "https://source.android.com/docs/core/architecture/kernel/generic-kernel-image",
+        "https://source.android.com/docs/core/audio",
+        "https://source.android.com/docs/core/camera/camera3",
+        "https://source.android.com/docs/core/graphics/surfaceflinger-windowmanager",
+        "https://source.android.com/docs/core/interaction/input",
+        "https://source.android.com/docs/core/media/media-modules",
+        "https://source.android.com/docs/core/ota/apex",
+        "https://source.android.com/docs/core/ota/modular-system",
+        "https://source.android.com/docs/core/ota/modular-system/dns-resolver",
+        "https://source.android.com/docs/core/ota/modular-system/networking",
+        "https://source.android.com/docs/core/ota/virtual_ab",
+        "https://source.android.com/docs/core/permissions/runtime_perms",
+        "https://source.android.com/docs/core/power/platform_mgmt",
+        "https://source.android.com/docs/security/features/encryption/file-based",
+        "https://source.android.com/docs/security/features/keystore"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "The central mechanism is documented design, not a recovered implementation or measurement."
+      ],
+      "sha256": "fe7b3c8dfb38e27f531cdf53e270d300a5aeeaee43a0e45e244e3c15d352aac7"
+    },
+    {
+      "id": "negative-controls",
+      "title": "Verification and negative controls",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "verification",
+        "negative-control",
+        "avb"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match; Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Study the AVB original-byte pass and changed-byte rejection without elevating them to a device boot test.",
+      "path": "articles/negative-controls.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/verified-boot-learning.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/epoch-2/avb/vbmeta-verification.json"
+      ],
+      "sourceUrls": [
+        "https://android.googlesource.com/platform/external/avb/+/refs/tags/android-17.0.0_r1/libavb/avb_vbmeta_image.h",
+        "https://source.android.com/docs/security/features/verifiedboot/avb",
+        "https://source.android.com/docs/security/features/verifiedboot/verified-boot"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage.",
+        "Embedded-key signature consistency does not establish OEM trust, rollback state or device acceptance."
+      ],
+      "sha256": "224099d7b4dc89b78abdd6f69c97c84cc05c52b9bf4b54022b3979d37bd3cea1"
+    },
+    {
+      "id": "durable-workflows",
+      "title": "Durable and resumable evidence workflows",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "reproducibility",
+        "checkpoints",
+        "jobs"
+      ],
+      "evidenceLevel": "derived",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match; Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Preserve hashes, failures, tool parameters and cleanup state so another investigation can resume honestly.",
+      "path": "articles/durable-workflows.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/tooling/jobs/jadx-resume-epoch2/job.json"
+      ],
+      "sourceUrls": [
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/ApiDemos/assets/HelloActivity.apk",
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/HelloActivity/src/com/example/android/helloactivity/HelloActivity.java",
+        "https://developer.android.com/reference/android/app/Activity#onCreate(android.os.Bundle)"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification."
+      ],
+      "sha256": "d996d30e5ada97d68974ab659a19070aad5be4dccf5fa8c22122be3e9744c1f6"
+    },
+    {
+      "id": "reference-boundaries",
+      "title": "Cross-reference search boundaries",
+      "platform": "android",
+      "tags": [
+        "a-z",
+        "xrefs",
+        "callbacks",
+        "static-analysis"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Historical AOSP HelloActivity prebuilt (version P/27, target SDK 23) retained in Android17 r1 tag; not Android17 system app",
+      "summary": "Interpret zero in-package references correctly when framework callbacks lie outside the APK.",
+      "path": "articles/reference-boundaries.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+        "case://local/android-ios-reverse-lab/tooling/hello-oncreate-references.json"
+      ],
+      "sourceUrls": [
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/ApiDemos/assets/HelloActivity.apk",
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/HelloActivity/src/com/example/android/helloactivity/HelloActivity.java",
+        "https://developer.android.com/reference/android/app/Activity#onCreate(android.os.Bundle)"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage."
+      ],
+      "sha256": "8fc1edc49f2875aa5ac36cfdbfc5f3e51afe70daf5b79b4bbfd2f23b3312a000"
+    },
+    {
+      "id": "practical-labs",
+      "title": "Practical learning labs",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "exercises",
+        "learning",
+        "method"
+      ],
+      "evidenceLevel": "derived",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match; Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Work through identity, startup, APK, integrity, iOS structures and system-boundary exercises using retained evidence.",
+      "path": "articles/practical-labs.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md"
+      ],
+      "sourceUrls": [
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/ApiDemos/assets/HelloActivity.apk",
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/HelloActivity/src/com/example/android/helloactivity/HelloActivity.java",
+        "https://developer.android.com/reference/android/app/Activity#onCreate(android.os.Bundle)"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification."
+      ],
+      "sha256": "e7f4ff05049c5d9e9b6e3b735c74d5b36b9939a7139890dab21f44b4eb588919"
+    },
+    {
+      "id": "evidence-levels",
+      "title": "Evidence levels and remaining unknowns",
+      "platform": "cross-platform",
+      "tags": [
+        "a-z",
+        "coverage",
+        "limitations",
+        "method"
+      ],
+      "evidenceLevel": "derived",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match; Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Keep source, artifacts, decompilation and runtime proof separate while following the next unanswered question.",
+      "path": "articles/evidence-levels.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-3/independent-review.md",
+        "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md"
+      ],
+      "sourceUrls": [],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification."
+      ],
+      "sha256": "b7c3df78dd8a2e6b3a9922fe202374dc10221d1f21f76311bb72694ab206e97e"
+    },
+    {
+      "id": "android-startup-lab",
+      "title": "Android startup: init to application lifecycle",
+      "platform": "android",
+      "tags": [
+        "boot",
+        "init",
+        "selinux",
+        "zygote",
+        "system-server",
+        "binder",
+        "art"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Trace pinned source from staged init through zygote, system_server, runtime entry checks and Binder dispatch.",
+      "path": "articles/android-startup-lab.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+        "case://local/android-ios-reverse-lab/epoch-2/android-source/provenance.json"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/guide/components/activities/activity-lifecycle",
+        "https://developer.android.com/guide/components/processes-and-threads",
+        "https://developer.android.com/guide/platform/index.html",
+        "https://source.android.com/docs/core/architecture/aidl",
+        "https://source.android.com/docs/core/architecture/ipc/binder-overview",
+        "https://source.android.com/docs/core/runtime",
+        "https://source.android.com/docs/core/runtime/jit-compiler",
+        "https://source.android.com/docs/core/runtime/zygote",
+        "https://source.android.com/docs/security/app-sandbox"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Pinned source observation does not establish behavior of the selected shipped binary or device."
+      ],
+      "sha256": "c84fedbc0400955fe54d2d17ae4b754bf3ddd23aeafce06e20be5d6323877421"
+    },
+    {
+      "id": "android-systems-lab",
+      "title": "Android systems and service boundaries",
+      "platform": "android",
+      "tags": [
+        "graphics",
+        "media",
+        "networking",
+        "storage",
+        "permissions",
+        "ota",
+        "hal"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Study subsystem contracts and selected source anchors without claiming full vendor or runtime coverage.",
+      "path": "articles/android-systems-lab.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+        "case://local/android-ios-reverse-lab/epoch-3/android-sources/provenance.json"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/topic/performance/power/power-details",
+        "https://source.android.com/docs/core/architecture/hal",
+        "https://source.android.com/docs/core/architecture/kernel/generic-kernel-image",
+        "https://source.android.com/docs/core/audio",
+        "https://source.android.com/docs/core/camera/camera3",
+        "https://source.android.com/docs/core/graphics/surfaceflinger-windowmanager",
+        "https://source.android.com/docs/core/interaction/input",
+        "https://source.android.com/docs/core/media/media-modules",
+        "https://source.android.com/docs/core/ota/apex",
+        "https://source.android.com/docs/core/ota/modular-system",
+        "https://source.android.com/docs/core/ota/modular-system/dns-resolver",
+        "https://source.android.com/docs/core/ota/modular-system/networking",
+        "https://source.android.com/docs/core/ota/virtual_ab",
+        "https://source.android.com/docs/core/permissions/runtime_perms",
+        "https://source.android.com/docs/core/power/platform_mgmt",
+        "https://source.android.com/docs/security/features/encryption/file-based",
+        "https://source.android.com/docs/security/features/keystore"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Pinned source observation does not establish behavior of the selected shipped binary or device."
+      ],
+      "sha256": "8fa2cf1632afdd958f38911662c60457654a504284d97ac39ee0d48d897be7dd"
+    },
+    {
+      "id": "android-cpu-runtime-lab",
+      "title": "Android CPU scheduling, ART and memory",
+      "platform": "android",
+      "tags": [
+        "cpu",
+        "scheduling",
+        "art",
+        "jit",
+        "aot",
+        "memory",
+        "threads"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Separate CPU scheduling from ART execution representation and examine policy/profile source boundaries.",
+      "path": "articles/android-cpu-runtime-lab.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-4/android-cpu-runtime.md",
+        "case://local/android-ios-reverse-lab/epoch-4/android-source/provenance.json",
+        "case://local/android-ios-reverse-lab/epoch-4/android-source/findings.json"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/about/versions/17/behavior-changes-all",
+        "https://developer.android.com/guide/components/processes-and-threads",
+        "https://developer.android.com/guide/practices/compatibility",
+        "https://developer.android.com/ndk/guides/abis",
+        "https://docs.kernel.org/scheduler/sched-deadline.html",
+        "https://docs.kernel.org/scheduler/sched-design-CFS.html",
+        "https://docs.kernel.org/scheduler/sched-eevdf.html",
+        "https://source.android.com/docs/compatibility/overview",
+        "https://source.android.com/docs/core/architecture/ipc/binder-threading",
+        "https://source.android.com/docs/core/perf/cgroups",
+        "https://source.android.com/docs/core/perf/lmkd",
+        "https://source.android.com/docs/core/perf/memory-limiter",
+        "https://source.android.com/docs/core/runtime/jit-compiler"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Pinned source observation does not establish behavior of the selected shipped binary or device."
+      ],
+      "sha256": "8fd702536af7c0492516347614fd54d12d4218b1e353ac74fb6cb830dbb6653f"
+    },
+    {
+      "id": "gpu-frame-engine-lab",
+      "title": "GPU work and real-time frame engines",
+      "platform": "android",
+      "tags": [
+        "gpu",
+        "rendering",
+        "vulkan",
+        "frame-pacing",
+        "fences",
+        "engine",
+        "latency"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Follow BufferQueue backpressure, composition fences and a simplified CPU/GPU frame model.",
+      "path": "articles/gpu-frame-engine-lab.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-4/gpu-frame-engine.md",
+        "case://local/android-ios-reverse-lab/epoch-4/graphics-source/BufferQueueProducer.cpp",
+        "case://local/android-ios-reverse-lab/epoch-4/graphics-source/Output.cpp"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/games/sdk/frame-pacing",
+        "https://docs.vulkan.org/guide/latest/synchronization.html",
+        "https://source.android.com/docs/core/graphics/arch-bq-gralloc",
+        "https://source.android.com/docs/core/graphics/surfaceflinger-windowmanager"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Pinned source observation does not establish behavior of the selected shipped binary or device.",
+        "Frame timings are hypothetical model inputs; no hardware benchmark or current engine binary was analyzed."
+      ],
+      "sha256": "9f36beb8b06402933b812fc2a2ab6175f250d7d493e4de910e7d46d28b002647"
+    },
+    {
+      "id": "apple-cpu-gpu-lab",
+      "title": "Apple scheduling, QoS and Metal",
+      "platform": "ios",
+      "tags": [
+        "cpu",
+        "gpu",
+        "xnu",
+        "qos",
+        "metal",
+        "real-time",
+        "synchronization"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "Public XNU f6217f891ac0bb64f3d375211650a4c1ff8ca1ea; Metal legacy and Metal4 documentation; unmatched to selected iOS27 kernel",
+      "summary": "Connect public XNU policy checks and version-specific Metal contracts while preserving the unmatched-kernel boundary.",
+      "path": "articles/apple-cpu-gpu-lab.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-4/apple-cpu-gpu.md",
+        "case://local/android-ios-reverse-lab/epoch-4/apple-sources/xnu-provenance.json",
+        "case://local/android-ios-reverse-lab/epoch-4/apple-sources/metal-doc-provenance.json"
+      ],
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/Metal/setting-up-a-command-structure",
+        "https://developer.apple.com/documentation/audiotoolbox/understanding-audio-workgroups",
+        "https://developer.apple.com/documentation/metal/choosing-a-resource-storage-mode-for-apple-gpus",
+        "https://developer.apple.com/documentation/metal/mtlcommandbuffer/commit%28%29",
+        "https://developer.apple.com/documentation/metal/resource-synchronization",
+        "https://developer.apple.com/documentation/metal/synchronizing-passes-with-a-fence",
+        "https://developer.apple.com/documentation/metal/understanding-the-metal-4-core-api",
+        "https://developer.apple.com/documentation/quartzcore/cadisplaylink/preferredframeraterange",
+        "https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html",
+        "https://developer.apple.com/metal/capabilities/",
+        "https://developer.apple.com/videos/play/meet-with-apple/239/",
+        "https://github.com/apple-oss-distributions/xnu/blob/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea/osfmk/kern/thread_policy.c#L300",
+        "https://github.com/apple-oss-distributions/xnu/blob/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea/osfmk/mach/thread_policy.h#L120",
+        "https://support.apple.com/en-gb/guide/security/sec15bfe098e/web"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Pinned source observation does not establish behavior of the selected shipped binary or device."
+      ],
+      "sha256": "0cde38b780f3b3be157faabf08c0c002ab082918fa58fa175eb556bdee469d8d"
+    },
+    {
+      "id": "apk-static-lab",
+      "title": "A real APK static-analysis lab",
+      "platform": "android",
+      "tags": [
+        "apk",
+        "jadx",
+        "rea",
+        "decompilation",
+        "manifest",
+        "callbacks"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Historical AOSP HelloActivity prebuilt (version P/27, target SDK 23) retained in Android17 r1 tag; not Android17 system app",
+      "summary": "Inspect official historical HelloActivity bytes through package, class, method and reference evidence.",
+      "path": "articles/apk-static-lab.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+        "case://local/android-ios-reverse-lab/tooling/hello-provenance.json",
+        "case://local/android-ios-reverse-lab/tooling/epoch2-evidence-index.json"
+      ],
+      "sourceUrls": [
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/ApiDemos/assets/HelloActivity.apk",
+        "https://android.googlesource.com/platform/development/+/4dafd114fab3c3d9543a5aff0ad097f479915176/samples/HelloActivity/src/com/example/android/helloactivity/HelloActivity.java",
+        "https://developer.android.com/reference/android/app/Activity#onCreate(android.os.Bundle)"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage.",
+        "The historical sample qualifies this static workflow; it is not a system APK and signatures were not cryptographically verified."
+      ],
+      "sha256": "b42fff220db8013d4d7de2e3dfce7a20cb7e2992a46fb3c40cf52936bcd0bf36"
+    },
+    {
+      "id": "avb-integrity-lab",
+      "title": "AVB integrity, signatures and policy",
+      "platform": "android",
+      "tags": [
+        "avb",
+        "verified-boot",
+        "rsa",
+        "integrity",
+        "trust"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Android 17 AOSP android-17.0.0_r1; QPR1 GSI metadata CP3A.260905.010 is not a proven source/binary match",
+      "summary": "Verify a selected GSI vbmeta with its embedded key and distinguish cryptographic consistency from authorized boot.",
+      "path": "articles/avb-integrity-lab.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/verified-boot-learning.md",
+        "case://local/android-ios-reverse-lab/epoch-2/avb/vbmeta-verification.json",
+        "case://local/android-ios-reverse-lab/epoch-2/avb/avb_vbmeta_image.h"
+      ],
+      "sourceUrls": [
+        "https://android.googlesource.com/platform/external/avb/+/refs/tags/android-17.0.0_r1/libavb/avb_vbmeta_image.h",
+        "https://source.android.com/docs/security/features/verifiedboot/avb",
+        "https://source.android.com/docs/security/features/verifiedboot/verified-boot"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage.",
+        "Embedded-key signature consistency does not establish OEM trust, rollback state or device acceptance."
+      ],
+      "sha256": "741036cf176baa7ef71721f4999b8bd0bd4237c6601ec573747ba7f1cb589325"
+    },
+    {
+      "id": "ios-firmware-lab",
+      "title": "iOS firmware wrappers and trust metadata",
+      "platform": "ios",
+      "tags": [
+        "ipsw",
+        "img4",
+        "im4p",
+        "lzfse",
+        "cryptex",
+        "trust-cache"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Follow selected archive members through digests, wrappers, decompression and bounded trust-cache interpretation.",
+      "path": "articles/ios-firmware-lab.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-2/ios-learning.md",
+        "case://local/android-ios-reverse-lab/epoch-2/ios/provenance.json",
+        "case://local/android-ios-reverse-lab/epoch-2/ios/digest-verification.json"
+      ],
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext",
+        "https://github.com/CRKatri/trustcache/blob/aa0e8847529cf76576fce8d2dbc9e088c8f1a0df/trustcache.h",
+        "https://github.com/tihmstar/img4tool",
+        "https://support.apple.com/en-gb/guide/security/sec59b0b31ff/web",
+        "https://support.apple.com/en-ie/guide/security-pdf/secb3000f149/web",
+        "https://support.apple.com/ro-md/guide/security/sec87fc038c2/web"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage.",
+        "No Apple signature/ticket chain, filesystem seal, actual load address or runtime enforcement was established."
+      ],
+      "sha256": "bbfe47d1d6acf576484846d8fb78752724456af1b7002ee86df4a9fbb0b09694"
+    },
+    {
+      "id": "ios-iboot-lab",
+      "title": "iBoot payload acquisition and static probes",
+      "platform": "ios",
+      "tags": [
+        "iboot",
+        "firmware",
+        "lzfse",
+        "entropy",
+        "arm64",
+        "disassembly"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "Selected iPhone14,7 iOS 27.0.1 build 24A446 restore components; no hardware execution",
+      "summary": "Decode a real iBoot member and inspect bytes and a synthetic native-prefix probe without inventing a load map.",
+      "path": "articles/ios-iboot-lab.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-3/ios-code.md",
+        "case://local/android-ios-reverse-lab/epoch-3/ios/provenance.json",
+        "case://local/android-ios-reverse-lab/epoch-3/ios/iboot-inspection.json"
+      ],
+      "sourceUrls": [
+        "https://support.arm.com/documentation/ddi0487/mb/-Part-C-The-AArch64-Instruction-Set/-Chapter-C1-The-A64-Instruction-Set/-C1-3-Address-generation/-C1-3-3-Load-store-addressing-modes",
+        "https://support.arm.com/documentation/dui0802/a/A64-General-Instructions/MOV--bitmask-immediate-?lang=en"
+      ],
+      "limitations": [
+        "No device or emulator execution is represented by this entry.",
+        "Evidence levels label the main retained anchor; documentation and derived explanations are not extra runtime proof.",
+        "This is imported case-authored teaching material, not a new independent verification.",
+        "Only identified retained artifacts and named checks were inspected; this is not whole-OS coverage.",
+        "No Apple signature/ticket chain, filesystem seal, actual load address or runtime enforcement was established."
+      ],
+      "sha256": "b2a7254c066d06a9e3e365b7c1387bea30a81f46a3cedbbc643ae6d4937b971f"
+    },
+    {
+      "id": "huawei-platform-families",
+      "title": "Huawei platform families and Android comparison",
+      "platform": "huawei",
+      "tags": [
+        "comparison",
+        "cpu",
+        "gpu",
+        "runtime",
+        "compatibility",
+        "firmware",
+        "huawei"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "HarmonyOS7 official documentation as of 2026-11-06; regional EMUI15; pinned OpenHarmony6.0 source separately scoped",
+      "summary": "Distinguish EMUI, legacy HarmonyOS, current commercial HarmonyOS and OpenHarmony; compare runtime, graphics and packages.",
+      "path": "articles/huawei-platform-families.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-5/huawei/comparison.md"
+      ],
+      "sourceUrls": [
+        "https://consumer.huawei.com/cn/support/content/zh-cn00445299/",
+        "https://consumer.huawei.com/cn/support/content/zh-cn16071232/",
+        "https://consumer.huawei.com/cn/support/content/zh-cn16103427/",
+        "https://consumer.huawei.com/cn/support/harmonyos/models-7/",
+        "https://consumer.huawei.com/levant/phones/pura80-ultra/specs/",
+        "https://developer.huawei.com/consumer/en/harmonyos/develop/",
+        "https://github.com/openharmony/ability_ability_runtime/blob/74e01f0c15715f404a80c802aaebb958cf25b908/frameworks/native/ability/native/ui_ability.cpp",
+        "https://github.com/openharmony/arkcompiler_ets_runtime/blob/master/README.md",
+        "https://github.com/openharmony/communication_dsoftbus/blob/master/README.md",
+        "https://github.com/openharmony/docs/blob/master/en/OpenHarmony-Overview.md",
+        "https://github.com/openharmony/docs/blob/master/en/application-dev/application-models/uiability-lifecycle.md",
+        "https://github.com/openharmony/docs/blob/master/en/application-dev/quick-start/application-package-overview.md",
+        "https://github.com/openharmony/graphic_graphic_2d/blob/master/README.md"
+      ],
+      "limitations": [
+        "No device execution or measured performance comparison.",
+        "Public source and documentation do not establish a matching commercial binary.",
+        "Follow per-claim evidence scope in the article."
+      ],
+      "sha256": "c6a21950c35fa84c44c5bee01a96f4d553ed9ee6ae34b5236e3092769db261b7"
+    },
+    {
+      "id": "ios-restore-identity-comparison",
+      "title": "iOS restore identities versus Android firmware contracts",
+      "platform": "ios",
+      "tags": [
+        "comparison",
+        "cpu",
+        "gpu",
+        "runtime",
+        "compatibility",
+        "firmware",
+        "ios"
+      ],
+      "evidenceLevel": "artifact-inspected",
+      "version": "iPhone14,7 iOS27.0.1 build24A446 retained manifest; no runtime",
+      "summary": "Compare seven identity differences, 99 shared component objects and installation trust boundaries.",
+      "path": "articles/ios-restore-identity-comparison.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-5/apple/comparison.md"
+      ],
+      "sourceUrls": [
+        "https://source.android.com/docs/core/architecture/partitions",
+        "https://source.android.com/docs/security/features/verifiedboot/avb",
+        "https://support.apple.com/guide/security/secure-software-updates-secf683e0b36/web"
+      ],
+      "limitations": [
+        "No device execution or measured performance comparison.",
+        "Public source and documentation do not establish a matching commercial binary.",
+        "Follow per-claim evidence scope in the article."
+      ],
+      "sha256": "f3dc067790feacf9f224f8babfc4534af4440e370eda1c2cd575f72ec67a3e09"
+    },
+    {
+      "id": "platform-tradeoffs",
+      "title": "Android, Huawei and iOS: criteria-based tradeoffs",
+      "platform": "cross-platform",
+      "tags": [
+        "comparison",
+        "cpu",
+        "gpu",
+        "runtime",
+        "compatibility",
+        "firmware",
+        "cross-platform"
+      ],
+      "evidenceLevel": "derived",
+      "version": "Scoped case evidence as of 2026-11-06",
+      "summary": "Compare inspectability, app compatibility, graphics contracts and unanswered performance questions.",
+      "path": "articles/platform-tradeoffs.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-5/comparison-atlas.md"
+      ],
+      "sourceUrls": [],
+      "limitations": [
+        "No device execution or measured performance comparison.",
+        "Public source and documentation do not establish a matching commercial binary.",
+        "Follow per-claim evidence scope in the article."
+      ],
+      "sha256": "d4b067ac8aa5edb597f5bc8c0ba638b226becdfbd50b4edfec0369434bffa88f"
+    },
+    {
+      "id": "openharmony-uiability-lifecycle",
+      "title": "OpenHarmony UIAbility lifecycle source trace",
+      "platform": "openharmony",
+      "tags": [
+        "lifecycle",
+        "runtime",
+        "uiability",
+        "cpu",
+        "application"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "OpenHarmony6.0 tag resolved to 74e01f0c15715f404a80c802aaebb958cf25b908",
+      "summary": "Trace runtime-language dispatch, early returns and optional lifecycle work in pinned UIAbility source.",
+      "path": "articles/openharmony-uiability-lifecycle.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-5/huawei/comparison.md",
+        "case://local/android-ios-reverse-lab/epoch-5/huawei/ui_ability.cpp",
+        "case://local/android-ios-reverse-lab/epoch-5/huawei/source-provenance.json"
+      ],
+      "sourceUrls": [
+        "https://github.com/openharmony/ability_ability_runtime/blob/74e01f0c15715f404a80c802aaebb958cf25b908/frameworks/native/ability/native/ui_ability.cpp"
+      ],
+      "limitations": [
+        "One complete source file inspected; callback binding and runtime behavior not fully traced.",
+        "No commercial Huawei binary/source equivalence established."
+      ],
+      "sha256": "0c7bb384fe0ec52a4cdf04383831f9038c638ae8e0fd377cf09a83c8bfa83575"
+    },
+    {
+      "id": "native-development-workflow",
+      "title": "Native Android SDK and AndroidX development",
+      "platform": "android",
+      "tags": [
+        "sdk",
+        "androidx",
+        "compose",
+        "app",
+        "development"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "Official reference review 2026-11-06; verify project-selected API and dependency availability",
+      "summary": "Actionable SDK-native app workflow with public API boundaries and explicit acceptance evidence.",
+      "path": "articles/native-development-workflow.md",
+      "sourcePaths": [
+        "case://local/android-atlas-plugin/skills/android/references/development.md"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/build",
+        "https://developer.android.com/develop/background-work/background-tasks/persistent",
+        "https://developer.android.com/develop/ui/compose/bom",
+        "https://developer.android.com/develop/ui/compose/designsystems/material3",
+        "https://developer.android.com/develop/ui/compose/layouts/adaptive",
+        "https://developer.android.com/develop/ui/compose/setup-compose-dependencies-and-compiler",
+        "https://developer.android.com/develop/ui/compose/testing",
+        "https://developer.android.com/guide/topics/manifest/uses-sdk-element",
+        "https://developer.android.com/privacy-and-security/security-best-practices",
+        "https://developer.android.com/topic/architecture/recommendations",
+        "https://developer.android.com/topic/libraries/architecture/coroutines",
+        "https://developer.android.com/topic/libraries/architecture/datastore",
+        "https://developer.android.com/topic/libraries/architecture/saving-states",
+        "https://developer.android.com/training/data-storage/room",
+        "https://developer.android.com/training/testing/fundamentals"
+      ],
+      "limitations": [
+        "Reference guidance does not establish build/runtime correctness.",
+        "Preserve existing project versions and verify current official API facts."
+      ],
+      "sha256": "7adf4adbf3e6bac0a4b122855870aa59dac3a416466b58df0669611a209820c6"
+    },
+    {
+      "id": "native-performance-workflow",
+      "title": "Android CPU GPU performance development",
+      "platform": "android",
+      "tags": [
+        "sdk",
+        "androidx",
+        "compose",
+        "app",
+        "performance"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "Official reference review 2026-11-06; verify project-selected API and dependency availability",
+      "summary": "Actionable SDK-native app workflow with public API boundaries and explicit acceptance evidence.",
+      "path": "articles/native-performance-workflow.md",
+      "sourcePaths": [
+        "case://local/android-atlas-plugin/skills/android/references/performance.md"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/develop/ui/compose/performance/bestpractices",
+        "https://developer.android.com/games/sdk/frame-pacing",
+        "https://developer.android.com/topic/performance/baselineprofiles/create-baselineprofile",
+        "https://developer.android.com/topic/performance/baselineprofiles/overview",
+        "https://developer.android.com/topic/performance/benchmarking/macrobenchmark-overview",
+        "https://developer.android.com/topic/performance/issues/render",
+        "https://developer.android.com/topic/performance/tracing"
+      ],
+      "limitations": [
+        "Reference guidance does not establish build/runtime correctness.",
+        "Preserve existing project versions and verify current official API facts."
+      ],
+      "sha256": "86b27a166a2b50c0f72f35db981ac2721868deb8aabb58e4535b3028d1ba616f"
+    },
+    {
+      "id": "v3-scheduling-research",
+      "title": "V3 bounded AI-assisted performance control",
+      "platform": "cross-platform",
+      "tags": [
+        "v3",
+        "research",
+        "ai",
+        "arm",
+        "cpu",
+        "gpu",
+        "latency",
+        "2030"
+      ],
+      "evidenceLevel": "derived",
+      "version": "Research proposal2026-11-06; no device benchmark or future hardware claim",
+      "summary": "Falsifiable performance-control design with equations, constraints, primary sources and counterarguments.",
+      "path": "articles/v3-scheduling-research.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-8/v3-scheduling.md"
+      ],
+      "sourceUrls": [
+        "https://arxiv.org/abs/1810.01963v4",
+        "https://developer.android.com/games/optimize/adpf",
+        "https://developer.android.com/games/optimize/adpf/thermal",
+        "https://docs.kernel.org/driver-api/thermal/power_allocator.html",
+        "https://docs.kernel.org/scheduler/sched-deadline.html",
+        "https://docs.kernel.org/scheduler/sched-energy.html"
+      ],
+      "limitations": [
+        "Proposal and prior-art synthesis; no novel algorithm or measured speedup established.",
+        "2030 is a planning horizon, not a release forecast."
+      ],
+      "sha256": "02e7910a5a71f51b2a3cfebc24033b19b85cb40b816f6bbd5bf54acfc461c83e"
+    },
+    {
+      "id": "v3-challenge-research",
+      "title": "V3 performance limits and adversarial review",
+      "platform": "cross-platform",
+      "tags": [
+        "v3",
+        "research",
+        "ai",
+        "arm",
+        "cpu",
+        "gpu",
+        "latency",
+        "2030"
+      ],
+      "evidenceLevel": "derived",
+      "version": "Research proposal2026-11-06; no device benchmark or future hardware claim",
+      "summary": "Falsifiable performance-control design with equations, constraints, primary sources and counterarguments.",
+      "path": "articles/v3-challenge-research.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-8/v3-challenge.md"
+      ],
+      "sourceUrls": [
+        "https://crd.lbl.gov/assets/Uploads/SciDAC20-Roofline-SWWilliams.pdf",
+        "https://developer.apple.com/documentation/quartzcore/cadisplaylink/preferredframeraterange",
+        "https://developer.arm.com/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-20-66/siggraph_5F00_mmg_5F00_2024_5F00_Mobile101.pdf",
+        "https://developer.arm.com/community/arm-community-blogs/b/architectures-and-processors-blog/posts/exploring-how-cache-coherency-accelerates-heterogeneous-compute",
+        "https://docs.kernel.org/locking/rt-mutex.html",
+        "https://docs.kernel.org/scheduler/sched-util-clamp.html"
+      ],
+      "limitations": [
+        "Proposal and prior-art synthesis; no novel algorithm or measured speedup established.",
+        "2030 is a planning horizon, not a release forecast."
+      ],
+      "sha256": "7c626c21e31085ea934207a47747ef2bf0aa599f6bc1e95ee8fedc3ed964f062"
+    },
+    {
+      "id": "core-apps-contracts",
+      "title": "System apps: authority freshness and responsiveness",
+      "platform": "android",
+      "tags": [
+        "v3",
+        "system",
+        "core",
+        "recovery",
+        "latency",
+        "freshness"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "Reference/source review2026-11-06; no device execution",
+      "summary": "Contracts and source-backed failure boundaries for system responsiveness and recovery.",
+      "path": "articles/core-apps-contracts.md",
+      "sourcePaths": [
+        "case://local/android-atlas-plugin/skills/android/references/core-apps.md"
+      ],
+      "sourceUrls": [
+        "https://android.googlesource.com/platform/frameworks/base/+/94b4c163b7dfe5ce3607f7bb8456f9573f7de57d/packages/SystemUI/src/com/android/systemui/qs/UserSettingObserver.java",
+        "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/Watchdog.java",
+        "https://developer.android.com/topic/performance/anrs/diagnose-and-fix-anrs",
+        "https://source.android.com/docs/core/architecture/ipc/binder-threading",
+        "https://source.android.com/docs/core/architecture/ipc/priority-inheritance"
+      ],
+      "limitations": [
+        "Observed source and documented mechanisms do not prove retail runtime behavior.",
+        "No new vulnerability or guaranteed failure prevention established."
+      ],
+      "sha256": "4eaa48338f477794f04e25e571a86ac5e8b549a10d4ce7038cbf528d7bcbf0b6"
+    },
+    {
+      "id": "recovery-contracts",
+      "title": "Recovery boot health and hardware failure limits",
+      "platform": "android",
+      "tags": [
+        "v3",
+        "system",
+        "core",
+        "recovery",
+        "latency",
+        "freshness"
+      ],
+      "evidenceLevel": "documentation",
+      "version": "Reference/source review2026-11-06; no device execution",
+      "summary": "Contracts and source-backed failure boundaries for system responsiveness and recovery.",
+      "path": "articles/recovery-contracts.md",
+      "sourcePaths": [
+        "case://local/android-atlas-plugin/skills/android/references/recovery.md"
+      ],
+      "sourceUrls": [
+        "https://docs.kernel.org/watchdog/watchdog-api.html",
+        "https://source.android.com/docs/core/architecture/bootloader/updating",
+        "https://source.android.com/docs/core/ota/ab",
+        "https://source.android.com/docs/core/ota/virtual_ab",
+        "https://source.android.com/docs/core/ota/virtual_ab/implement",
+        "https://source.android.com/docs/core/tests/debug/rescue-party",
+        "https://source.android.com/docs/security/features/verifiedboot/avb"
+      ],
+      "limitations": [
+        "Observed source and documented mechanisms do not prove retail runtime behavior.",
+        "No new vulnerability or guaranteed failure prevention established."
+      ],
+      "sha256": "43e7a24d1336e2905398609e9765504eaa74215e92233b87b35ce5a531c6bb88"
+    },
+    {
+      "id": "foundations-learning-map",
+      "title": "Foundation-first systems learning and engineering",
+      "platform": "cross-platform",
+      "tags": [
+        "foundation",
+        "assembly",
+        "machine-code",
+        "kernel",
+        "os",
+        "security",
+        "efficiency",
+        "energy",
+        "ai",
+        "compatibility"
+      ],
+      "evidenceLevel": "derived",
+      "version": "User-directed curriculum2026-11-06; design guidance, not implementation proof",
+      "summary": "Six learning tracks connected by security, stability, energy, compatibility and model-quality contracts.",
+      "path": "articles/foundations-learning-map.md",
+      "sourcePaths": [
+        "case://local/android-atlas-plugin/skills/android/references/foundations.md",
+        "case://local/android-atlas-plugin/PROJECT-DIRECTION.md"
+      ],
+      "sourceUrls": [],
+      "limitations": [
+        "Curriculum and acceptance framework; no new OS, universal compatibility or measured performance established."
+      ],
+      "sha256": "3273318beed450a793687324170619ff90cd434b366b775870f7435d5721c1b1"
+    },
+    {
+      "id": "v3x-redteam-and-guard",
+      "title": "V3X local red-team findings and quarantine guard",
+      "platform": "cross-platform",
+      "tags": [
+        "v3x",
+        "security",
+        "redteam",
+        "prompt-injection",
+        "policy",
+        "guard",
+        "apk"
+      ],
+      "evidenceLevel": "derived",
+      "version": "Local bounded red-team2026-11-06; no unknown-attack immunity",
+      "summary": "Reproduced parser/numeric/input failures, fixes, bounded guard and explicit trust boundaries.",
+      "path": "articles/v3x-redteam-and-guard.md",
+      "sourcePaths": [
+        "case://local/android-atlas-plugin/V3X-SECURITY.md",
+        "case://local/android-ios-reverse-lab/epoch-11/redteam-runtime.md",
+        "case://local/android-ios-reverse-lab/epoch-11/redteam-policy.md",
+        "case://local/android-ios-reverse-lab/epoch-11/redteam-reader-apk.md"
+      ],
+      "sourceUrls": [],
+      "limitations": [
+        "Tested local fixtures only; no full APK/runtime exploit assessment or complete dependency audit.",
+        "Guard checks caller assertions and cannot edit model weights or execute proposals."
+      ],
+      "sha256": "225ab1689a79ca574ad3037166f665d90eb5cb39a0c2c8fe858914dfeb3bf3ee"
+    },
+    {
+      "id": "antartica-m5-runtime-results",
+      "title": "AV3X Antartica real M5 emulator measurements",
+      "platform": "android",
+      "tags": [
+        "av3x",
+        "antartica",
+        "m5",
+        "emulator",
+        "benchmark",
+        "gpu",
+        "runtime",
+        "performance"
+      ],
+      "evidenceLevel": "derived",
+      "version": "Measured2026-11-06; AppleM5/macOS26.5.1,Android15API35 ARM64/HVF,debugAPK; not physical-device results",
+      "summary": "Balanced app A/B, host-versus-software graphics and return control; no reliable code-patch gain, strong observed renderer effect.",
+      "path": "articles/antartica-m5-runtime-results.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-12/RESULTS.md",
+        "case://local/android-ios-reverse-lab/epoch-12/performance-review.md",
+        "case://local/android-ios-reverse-lab/epoch-12/software-ab/receipt.json",
+        "case://local/android-ios-reverse-lab/epoch-12/host-ab/receipt.json",
+        "case://local/android-ios-reverse-lab/epoch-12/software-return/receipt.json"
+      ],
+      "sourceUrls": [
+        "https://developer.android.com/studio/run/emulator-acceleration",
+        "https://developer.android.com/tools/dumpsys",
+        "https://developer.android.com/topic/performance/benchmarking/macrobenchmark-overview"
+      ],
+      "limitations": [
+        "Sequential backend phases/debug emulator and invalid timestamp fields limit inference.",
+        "No physical FPS, energy, native-macOS APK or universal app-speed claim."
+      ],
+      "sha256": "9bdf1aa0f8c7b9e999ecde3032ca9aa3d1751e731048f82e8a64d20986f8838a"
+    },
+    {
+      "id": "antartica-emulator-release-readiness",
+      "title": "Antartica: exact-release emulator acceptance and test pitfalls",
+      "platform": "android",
+      "tags": [
+        "antartica",
+        "release",
+        "emulator",
+        "androidx",
+        "testing",
+        "state",
+        "signing"
+      ],
+      "evidenceLevel": "derived",
+      "version": "2026-11-06; M5/API35 ARM64 owned emulator; lab signature only",
+      "summary": "Exact minified release payload, independent UI journeys, signing distinctions and retained failing harness attempts.",
+      "path": "articles/antartica-emulator-release-readiness.md",
+      "sourcePaths": [
+        "case://local/android-ios-reverse-lab/epoch-13/RESULTS.md",
+        "case://local/android-ios-reverse-lab/epoch-13/release-payload-parity-full.json",
+        "case://local/android-ios-reverse-lab/epoch-13/run-host-acceptance.mjs"
+      ],
+      "sourceUrls": [],
+      "limitations": [
+        "One owned emulator/configuration matrix; no physical hardware, performance or energy gain established.",
+        "HTML reader rendered/keyboard/assistive gate remains open. Lab signing is not production identity."
+      ],
+      "sha256": "14d022b43268ad43be4e67a9a5f569f36ef6245cf80d2dfd353117e8a4958925"
+    },
+    {
+      "id": "maze-malaysia-map-build",
+      "title": "Maze: building a real native Malaysia maps app",
+      "platform": "android",
+      "tags": [
+        "maps",
+        "maze",
+        "maplibre",
+        "navigation",
+        "scaffold",
+        "location",
+        "routing",
+        "native",
+        "gpu"
+      ],
+      "evidenceLevel": "derived",
+      "version": "2026-11-06; Maze0.1 lab, API35 ARM64 emulator, MapLibre13.7.1 OpenGL; no physical-device or live-traffic proof",
+      "summary": "An independent vector-map/road-preview vertical slice, guarded source scaffold, real provider boundaries and emulator acceptance.",
+      "path": "articles/maze-malaysia-map-build.md",
+      "sourcePaths": [
+        "case://local/MazeMalaysiaWay/research/RESULTS.md",
+        "case://local/MazeMalaysiaWay/research/evidence/acceptance-v3/receipt.json",
+        "case://local/MazeMalaysiaWay/research/evidence/final-payload-parity.json",
+        "case://local/MazeMalaysiaWay/research/REA-FINDINGS.md"
+      ],
+      "sourceUrls": [
+        "https://maplibre.org/maplibre-native/android/examples/",
+        "https://openfreemap.org/quick_start/",
+        "https://project-osrm.org/docs/v5.24.0/api/",
+        "https://operations.osmfoundation.org/policies/nominatim/"
+      ],
+      "limitations": [
+        "Prototype route preview, not active driving guidance or live traffic.",
+        "Original Google Maps/Waze Android clients and private backends were not reconstructed.",
+        "One owned emulator/API level; scaffold clone compile is separate from runtime proof."
+      ],
+      "sha256": "136ba796a4151e3c41edf6cd8ab8ace00ca342204c4cf651c7b24daffdcf0d81"
+    },
+    {
+      "id": "maze-reliable-free-beta",
+      "title": "Maze revision 02: reliable free-user maps and native recovery",
+      "platform": "android",
+      "tags": [
+        "maze",
+        "maps",
+        "offline",
+        "recovery",
+        "ui",
+        "services",
+        "publishing",
+        "nominatim",
+        "scaffold"
+      ],
+      "evidenceLevel": "derived",
+      "version": "2026-11-06; Maze0.2 beta; emulator lab fixtures; production gateway not deployed",
+      "summary": "Explicit gateway configuration, provider-policy correction, compact Day/Night UI, saved trips and funded reliability boundaries.",
+      "path": "articles/maze-reliable-free-beta.md",
+      "sourcePaths": [
+        "case://local/MazeMalaysiaWay/research/revision-02/RESULTS.md",
+        "case://local/MazeMalaysiaWay/research/revision-02/PUBLISHING.md"
+      ],
+      "sourceUrls": [
+        "https://operations.osmfoundation.org/policies/nominatim/",
+        "https://openfreemap.org/quick_start/",
+        "https://support.google.com/googleplay/android-developer/answer/11926878"
+      ],
+      "limitations": [
+        "Controlled fixture routing does not establish live road correctness or production availability.",
+        "Offline coverage requires completed regions, matching styles and bounded zoom.",
+        "Emulator only; physical-device and full assistive checks remain open."
+      ],
+      "sha256": "afddfb6d368f737bd2389a0496a05c128304ea63d128c1ce4afc043dfdb4ebcb"
+    }
+  ],
+  "builtAt": "2026-11-06T03:24:38.282Z"
+}

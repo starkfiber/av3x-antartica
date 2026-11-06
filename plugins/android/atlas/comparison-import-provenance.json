@@ -1,0 +1,17 @@
+[
+  {
+    "source": "case://local/android-ios-reverse-lab/epoch-5/huawei/comparison.md",
+    "sha256": "37a533caab24890b52a13d9c5ad9fae8869f16302028ef2064f9f5c5e896985f",
+    "article": "articles/huawei-platform-families.md"
+  },
+  {
+    "source": "case://local/android-ios-reverse-lab/epoch-5/apple/comparison.md",
+    "sha256": "ae4529b5cd1d0c1ae2ab44214a1149841eb8f8292576b0b778d3158b7ff09311",
+    "article": "articles/ios-restore-identity-comparison.md"
+  },
+  {
+    "source": "case://local/android-ios-reverse-lab/epoch-5/comparison-atlas.md",
+    "sha256": "39084bb7c4112421237f236a60bb88f6c484891aaefdc4a15979cd0edc8a3ec7",
+    "article": "articles/platform-tradeoffs.md"
+  }
+]

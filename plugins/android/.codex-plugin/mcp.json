@@ -1,0 +1,1 @@
+{"mcpServers":{"android-atlas":{"command":"/bin/sh","args":["${PLUGIN_ROOT}/scripts/launch-mcp.sh"]}}}

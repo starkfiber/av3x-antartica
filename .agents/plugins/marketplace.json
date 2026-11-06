@@ -1,0 +1,20 @@
+{
+  "name": "av3x-antartica",
+  "interface": {
+    "displayName": "AV3X Antartica"
+  },
+  "plugins": [
+    {
+      "name": "android",
+      "source": {
+        "source": "local",
+        "path": "./plugins/android"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "createdDate": "2026-11-06",
+  "caseRoot": "case://local/android-ios-reverse-lab",
+  "scope": "Portable case-authored explanations, including citations to primary documentation and explicitly identified third-party format references. No binaries, target execution or fresh REA analysis. Raw evidence remains in external local case paths.",
+  "imports": [
+    {
+      "id": "artifact-identity",
+      "articlePath": "articles/artifact-identity.md",
+      "articleSha256": "b154d2091aaef52c0785c2214bdcf8b7d03b42d2762f554620dca2ee1668bc21",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/ios-learning.md",
+      "originSha256": "ebee4b24a3aed4c3a385de4c78cd085cc6e8458376dc8010cbff7f31a8e8f615",
+      "originalGuideSection": "A",
+      "words": 262,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "boot-stage-handoffs",
+      "articlePath": "articles/boot-stage-handoffs.md",
+      "articleSha256": "2b01181dc0a277c59255fa1807b60303627396590f6cc4d63a15d0b37eb56fcf",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+      "originSha256": "811d2c1968aa117c1f331b50d5561e525676becc51cbf415a6710380cfa566b7",
+      "originalGuideSection": "B",
+      "words": 272,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "code-representations",
+      "articlePath": "articles/code-representations.md",
+      "articleSha256": "7edf9de8d98af281db1aef487c0a17aedca2beaee178d256ac7b643a788648d6",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+      "originSha256": "7fdab22809ddaccae29c730f8306d3aa8048d4edc808d36fed8771731561aa62",
+      "originalGuideSection": "C",
+      "words": 247,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "drivers-device-boundaries",
+      "articlePath": "articles/drivers-device-boundaries.md",
+      "articleSha256": "0433ca58ac4d239855558cb8d01d49c802b5ae1511c3701b2d5819ffda708460",
+      "origin": "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+      "originSha256": "ce70bce1cacfc7694e528f18d54cfef1d372e43795ac992dc89d8b495162529c",
+      "originalGuideSection": "D",
+      "words": 258,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "execution-state",
+      "articlePath": "articles/execution-state.md",
+      "articleSha256": "3200ce9b76cebaacfaceab3b8754cb776a30c045343d8667536ce2fb91561917",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+      "originSha256": "811d2c1968aa117c1f331b50d5561e525676becc51cbf415a6710380cfa566b7",
+      "originalGuideSection": "E",
+      "words": 245,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "container-transformations",
+      "articlePath": "articles/container-transformations.md",
+      "articleSha256": "3dee26db40d56ce04280e144a11d2c7d78ace1817c7264bbd737f999c3f602ca",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/ios-learning.md",
+      "originSha256": "ebee4b24a3aed4c3a385de4c78cd085cc6e8458376dc8010cbff7f31a8e8f615",
+      "originalGuideSection": "F",
+      "words": 256,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "graphics-presentation",
+      "articlePath": "articles/graphics-presentation.md",
+      "articleSha256": "f7b882c474a7e5986d4f8639816b3f8f09a9e44dc4b9f7a93de402b7dffe40d4",
+      "origin": "case://local/android-ios-reverse-lab/epoch-4/gpu-frame-engine.md",
+      "originSha256": "79c9832533aaf6c2a16a030a369a9b347be05ebcd7e5244ee8f4b6f7caf90fe4",
+      "originalGuideSection": "G",
+      "words": 239,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "hal-contracts",
+      "articlePath": "articles/hal-contracts.md",
+      "articleSha256": "d8cc0537d6211d24a9901c0d53a22b3a71ff7ce822e9e6564626dca912097c00",
+      "origin": "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+      "originSha256": "ce70bce1cacfc7694e528f18d54cfef1d372e43795ac992dc89d8b495162529c",
+      "originalGuideSection": "H",
+      "words": 226,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "binder-ipc",
+      "articlePath": "articles/binder-ipc.md",
+      "articleSha256": "e876c1ce8ad734eb4a86ad44fd05ff7c6a3a8e44502a7174f79eafcd0d86f40a",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+      "originSha256": "811d2c1968aa117c1f331b50d5561e525676becc51cbf415a6710380cfa566b7",
+      "originalGuideSection": "I",
+      "words": 234,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "queues-scheduling",
+      "articlePath": "articles/queues-scheduling.md",
+      "articleSha256": "ec00238cd27d8f2346286d0e562be9302e4cc62bcfea61b742c8b87d3832641a",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+      "originSha256": "811d2c1968aa117c1f331b50d5561e525676becc51cbf415a6710380cfa566b7",
+      "originalGuideSection": "J",
+      "words": 241,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "keys-trust",
+      "articlePath": "articles/keys-trust.md",
+      "articleSha256": "df611c0aa3817892eb722206e6245f59c52607398973faeb1ab4fa9828346cec",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/verified-boot-learning.md",
+      "originSha256": "38ebebd2e0e55734a78146fe8502541cddd4b90407f7741a0a34e6302eb31e47",
+      "originalGuideSection": "K",
+      "words": 266,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "activity-process-lifecycle",
+      "articlePath": "articles/activity-process-lifecycle.md",
+      "articleSha256": "1797e74362fc9a3496ca5db219eb61709809a9ec436a8202b8b31d8283560b40",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+      "originSha256": "7fdab22809ddaccae29c730f8306d3aa8048d4edc808d36fed8771731561aa62",
+      "originalGuideSection": "L",
+      "words": 235,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "media-pipeline",
+      "articlePath": "articles/media-pipeline.md",
+      "articleSha256": "e7f04c2f32b119ea26289c50ba168857615cfef9be0e4c2cead6505e90f94db2",
+      "origin": "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+      "originSha256": "ce70bce1cacfc7694e528f18d54cfef1d372e43795ac992dc89d8b495162529c",
+      "originalGuideSection": "M",
+      "words": 239,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "network-observation",
+      "articlePath": "articles/network-observation.md",
+      "articleSha256": "11fec8e6e92a74596dd1266c33aa589c60f3bada11dc8551b75a7f9cfc81125c",
+      "origin": "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+      "originSha256": "ce70bce1cacfc7694e528f18d54cfef1d372e43795ac992dc89d8b495162529c",
+      "originalGuideSection": "N",
+      "words": 227,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "updates-version-boundaries",
+      "articlePath": "articles/updates-version-boundaries.md",
+      "articleSha256": "62c0e3a0944302cb45a7a03fbf0d3375fff21a47fee1e526e5cea4765cae6acd",
+      "origin": "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+      "originSha256": "ce70bce1cacfc7694e528f18d54cfef1d372e43795ac992dc89d8b495162529c",
+      "originalGuideSection": "O",
+      "words": 239,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "permission-checks",
+      "articlePath": "articles/permission-checks.md",
+      "articleSha256": "ebcadbf9f725557579865c7ec5b8cb2bf7ff0b08200a014856b4e66c0ee1468e",
+      "origin": "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+      "originSha256": "ce70bce1cacfc7694e528f18d54cfef1d372e43795ac992dc89d8b495162529c",
+      "originalGuideSection": "P",
+      "words": 238,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "investigation-questions",
+      "articlePath": "articles/investigation-questions.md",
+      "articleSha256": "abb51de5e88586d982de39bbc2c10c2ddb1defa0557a7bedbdaf8e7861dcdd1f",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/ios-learning.md",
+      "originSha256": "ebee4b24a3aed4c3a385de4c78cd085cc6e8458376dc8010cbff7f31a8e8f615",
+      "originalGuideSection": "Q",
+      "words": 234,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "resources-ui",
+      "articlePath": "articles/resources-ui.md",
+      "articleSha256": "74b2b8e0b55f162746296d4a0d8243c43d284803e35f912abd40f2c711eb22ef",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+      "originSha256": "7fdab22809ddaccae29c730f8306d3aa8048d4edc808d36fed8771731561aa62",
+      "originalGuideSection": "R",
+      "words": 227,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "system-services",
+      "articlePath": "articles/system-services.md",
+      "articleSha256": "ea4b78f64fead95718d4d1f40e2c1cabbbfbc50e9b815dff9a66a1e73e4fec13",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+      "originSha256": "811d2c1968aa117c1f331b50d5561e525676becc51cbf415a6710380cfa566b7",
+      "originalGuideSection": "S",
+      "words": 238,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "trust-cache-records",
+      "articlePath": "articles/trust-cache-records.md",
+      "articleSha256": "80b2a640a28d3554320caa927348206ec2e60bd9be639331cbabdd66bcf8e4b2",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/ios-learning.md",
+      "originSha256": "ebee4b24a3aed4c3a385de4c78cd085cc6e8458376dc8010cbff7f31a8e8f615",
+      "originalGuideSection": "T",
+      "words": 249,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "encryption-key-state",
+      "articlePath": "articles/encryption-key-state.md",
+      "articleSha256": "467b85bffc9fcd251304467ed003371ccec8a3c52d0184118144b6353acfcd64",
+      "origin": "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+      "originSha256": "ce70bce1cacfc7694e528f18d54cfef1d372e43795ac992dc89d8b495162529c",
+      "originalGuideSection": "U",
+      "words": 230,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "negative-controls",
+      "articlePath": "articles/negative-controls.md",
+      "articleSha256": "4f083b33b2b4d44e7275dcd8ff63737902764172c5289466c383b55916658870",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/verified-boot-learning.md",
+      "originSha256": "38ebebd2e0e55734a78146fe8502541cddd4b90407f7741a0a34e6302eb31e47",
+      "originalGuideSection": "V",
+      "words": 261,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "durable-workflows",
+      "articlePath": "articles/durable-workflows.md",
+      "articleSha256": "d11e27ba86aa2b1fa3292f8cd612aebc68c1a2ff276cec63499fd2940f8a9af7",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+      "originSha256": "7fdab22809ddaccae29c730f8306d3aa8048d4edc808d36fed8771731561aa62",
+      "originalGuideSection": "W",
+      "words": 239,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "reference-boundaries",
+      "articlePath": "articles/reference-boundaries.md",
+      "articleSha256": "39dd77c9ed4531e2b714065101fa7661e4c5c610988c8af87523c344381b1b7c",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+      "originSha256": "7fdab22809ddaccae29c730f8306d3aa8048d4edc808d36fed8771731561aa62",
+      "originalGuideSection": "X",
+      "words": 234,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "practical-labs",
+      "articlePath": "articles/practical-labs.md",
+      "articleSha256": "1a5f40c842aa8c0b315e5682003d69ae923d6537c24944ae8be06227b52f6cd9",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+      "originSha256": "7fdab22809ddaccae29c730f8306d3aa8048d4edc808d36fed8771731561aa62",
+      "originalGuideSection": "Y",
+      "words": 254,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "evidence-levels",
+      "articlePath": "articles/evidence-levels.md",
+      "articleSha256": "167099575802680f0af5588b821d19f78279f865b7b079d8c53460b50492a774",
+      "origin": "case://local/android-ios-reverse-lab/epoch-3/independent-review.md",
+      "originSha256": "b1bf36d8f55f2b098208e39f5391931a7fe8199e84c1e4583ea2915197b431ae",
+      "originalGuideSection": "Z",
+      "words": 247,
+      "guideOrigin": "case://local/android-ios-reverse-lab/LEARN-ANDROID-IOS-A-Z.md",
+      "guideSha256": "752d52c4a15789deb05da00a05f26ba2038855b17e2efdae5ce99c30de010ebb"
+    },
+    {
+      "id": "android-startup-lab",
+      "articlePath": "articles/android-startup-lab.md",
+      "articleSha256": "c1bfd4222682d598cfe01003175185a2a36d70d559c2ddb45c3f060cc7e080f9",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/android-learning.md",
+      "originSha256": "811d2c1968aa117c1f331b50d5561e525676becc51cbf415a6710380cfa566b7",
+      "originalGuideSection": null,
+      "words": 2449
+    },
+    {
+      "id": "android-systems-lab",
+      "articlePath": "articles/android-systems-lab.md",
+      "articleSha256": "fb8c0b067ebb77c4d221ecaea313370090e775425fc9ab54f7ecc9f284e3906d",
+      "origin": "case://local/android-ios-reverse-lab/epoch-3/android-systems.md",
+      "originSha256": "ce70bce1cacfc7694e528f18d54cfef1d372e43795ac992dc89d8b495162529c",
+      "originalGuideSection": null,
+      "words": 2210
+    },
+    {
+      "id": "android-cpu-runtime-lab",
+      "articlePath": "articles/android-cpu-runtime-lab.md",
+      "articleSha256": "8f5758fcf0e6c0c79788e7cf5cf2651af5379ec05e1589f530d298510fa6d7e0",
+      "origin": "case://local/android-ios-reverse-lab/epoch-4/android-cpu-runtime.md",
+      "originSha256": "75bd11db35e7650936533bc47380475ebb6c6aa92c873076b3719e1a37ec5c39",
+      "originalGuideSection": null,
+      "words": 2112
+    },
+    {
+      "id": "gpu-frame-engine-lab",
+      "articlePath": "articles/gpu-frame-engine-lab.md",
+      "articleSha256": "11b22f3376b418d11075cf56dbce9bb70f41b03ac289aa70930921cb3e00e029",
+      "origin": "case://local/android-ios-reverse-lab/epoch-4/gpu-frame-engine.md",
+      "originSha256": "79c9832533aaf6c2a16a030a369a9b347be05ebcd7e5244ee8f4b6f7caf90fe4",
+      "originalGuideSection": null,
+      "words": 1326
+    },
+    {
+      "id": "apple-cpu-gpu-lab",
+      "articlePath": "articles/apple-cpu-gpu-lab.md",
+      "articleSha256": "8137a53455a6a6896334be2a727f841d7851752f216a04ba68d6a439decafb7b",
+      "origin": "case://local/android-ios-reverse-lab/epoch-4/apple-cpu-gpu.md",
+      "originSha256": "180bf8cedd9171357a7fe45d3dd1042d4a70b2b8b68acbb6a0d96633a11f822f",
+      "originalGuideSection": null,
+      "words": 2382
+    },
+    {
+      "id": "apk-static-lab",
+      "articlePath": "articles/apk-static-lab.md",
+      "articleSha256": "219c96675adcaf147a8baad5fa9632e600d6d6cc0f1d0f824df0bcfb2531d750",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/tooling.md",
+      "originSha256": "7fdab22809ddaccae29c730f8306d3aa8048d4edc808d36fed8771731561aa62",
+      "originalGuideSection": null,
+      "words": 1246
+    },
+    {
+      "id": "avb-integrity-lab",
+      "articlePath": "articles/avb-integrity-lab.md",
+      "articleSha256": "af626e82cb0e1b15fb374f3318f51db53b32bb781f1642ef77db181691affd4f",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/verified-boot-learning.md",
+      "originSha256": "38ebebd2e0e55734a78146fe8502541cddd4b90407f7741a0a34e6302eb31e47",
+      "originalGuideSection": null,
+      "words": 1121
+    },
+    {
+      "id": "ios-firmware-lab",
+      "articlePath": "articles/ios-firmware-lab.md",
+      "articleSha256": "7e638d15c11861496056b08b14f044dee6d45d152914ebe3225e7c7bbe913fe2",
+      "origin": "case://local/android-ios-reverse-lab/epoch-2/ios-learning.md",
+      "originSha256": "ebee4b24a3aed4c3a385de4c78cd085cc6e8458376dc8010cbff7f31a8e8f615",
+      "originalGuideSection": null,
+      "words": 1985
+    },
+    {
+      "id": "ios-iboot-lab",
+      "articlePath": "articles/ios-iboot-lab.md",
+      "articleSha256": "407266e448b0bcecceb80b771bf6aca9224da77756d9d3bb905e60379b14963d",
+      "origin": "case://local/android-ios-reverse-lab/epoch-3/ios-code.md",
+      "originSha256": "af84b70cc3a06069850d8dc78fab5a07dd40b5e2977d0cbaa6ae7a0c48ed7516",
+      "originalGuideSection": null,
+      "words": 1705
+    }
+  ]
+}

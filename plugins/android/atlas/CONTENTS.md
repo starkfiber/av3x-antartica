@@ -1,0 +1,55 @@
+# Android Atlas — contents
+
+Curated evidence-linked reference. No whole-OS completeness or runtime validation claim.
+
+- [Artifacts and provenance](articles/artifact-identity.md) — `artifact-identity` · cross-platform · artifact-inspected
+- [Boot stages and handoffs](articles/boot-stage-handoffs.md) — `boot-stage-handoffs` · cross-platform · source-inspected
+- [Source, bytecode and machine code](articles/code-representations.md) — `code-representations` · cross-platform · artifact-inspected
+- [Drivers and device-specific boundaries](articles/drivers-device-boundaries.md) — `drivers-device-boundaries` · cross-platform · documentation
+- [Execution depends on state](articles/execution-state.md) — `execution-state` · cross-platform · derived
+- [Containers, filesystems and transformations](articles/container-transformations.md) — `container-transformations` · cross-platform · artifact-inspected
+- [Drawing versus displaying](articles/graphics-presentation.md) — `graphics-presentation` · android · documentation
+- [HAL contracts and vendor implementations](articles/hal-contracts.md) — `hal-contracts` · android · documentation
+- [Binder and process boundaries](articles/binder-ipc.md) — `binder-ipc` · android · source-inspected
+- [Jobs, queues and deferred work](articles/queues-scheduling.md) — `queues-scheduling` · android · source-inspected
+- [Keys, signatures and authorized trust](articles/keys-trust.md) — `keys-trust` · cross-platform · artifact-inspected
+- [Activity lifecycle versus process lifetime](articles/activity-process-lifecycle.md) — `activity-process-lifecycle` · android · documentation
+- [Media, buffers and hardware boundaries](articles/media-pipeline.md) — `media-pipeline` · android · documentation
+- [Network leads versus observed traffic](articles/network-observation.md) — `network-observation` · android · documentation
+- [OTA, Mainline and version boundaries](articles/updates-version-boundaries.md) — `updates-version-boundaries` · android · documentation
+- [Permissions, identity and enforcement](articles/permission-checks.md) — `permission-checks` · android · source-inspected
+- [Questions that narrow an investigation](articles/investigation-questions.md) — `investigation-questions` · cross-platform · derived
+- [Resources and UI declarations](articles/resources-ui.md) — `resources-ui` · android · artifact-inspected
+- [System services and dependency order](articles/system-services.md) — `system-services` · android · source-inspected
+- [Trust-cache records and code measurements](articles/trust-cache-records.md) — `trust-cache-records` · ios · artifact-inspected
+- [Storage encryption and key state](articles/encryption-key-state.md) — `encryption-key-state` · android · documentation
+- [Verification and negative controls](articles/negative-controls.md) — `negative-controls` · cross-platform · artifact-inspected
+- [Durable and resumable evidence workflows](articles/durable-workflows.md) — `durable-workflows` · cross-platform · derived
+- [Cross-reference search boundaries](articles/reference-boundaries.md) — `reference-boundaries` · android · artifact-inspected
+- [Practical learning labs](articles/practical-labs.md) — `practical-labs` · cross-platform · derived
+- [Evidence levels and remaining unknowns](articles/evidence-levels.md) — `evidence-levels` · cross-platform · derived
+- [Android startup: init to application lifecycle](articles/android-startup-lab.md) — `android-startup-lab` · android · source-inspected
+- [Android systems and service boundaries](articles/android-systems-lab.md) — `android-systems-lab` · android · source-inspected
+- [Android CPU scheduling, ART and memory](articles/android-cpu-runtime-lab.md) — `android-cpu-runtime-lab` · android · source-inspected
+- [GPU work and real-time frame engines](articles/gpu-frame-engine-lab.md) — `gpu-frame-engine-lab` · android · source-inspected
+- [Apple scheduling, QoS and Metal](articles/apple-cpu-gpu-lab.md) — `apple-cpu-gpu-lab` · ios · source-inspected
+- [A real APK static-analysis lab](articles/apk-static-lab.md) — `apk-static-lab` · android · artifact-inspected
+- [AVB integrity, signatures and policy](articles/avb-integrity-lab.md) — `avb-integrity-lab` · android · artifact-inspected
+- [iOS firmware wrappers and trust metadata](articles/ios-firmware-lab.md) — `ios-firmware-lab` · ios · artifact-inspected
+- [iBoot payload acquisition and static probes](articles/ios-iboot-lab.md) — `ios-iboot-lab` · ios · artifact-inspected
+- [Huawei platform families and Android comparison](articles/huawei-platform-families.md) — `huawei-platform-families` · huawei · documentation
+- [iOS restore identities versus Android firmware contracts](articles/ios-restore-identity-comparison.md) — `ios-restore-identity-comparison` · ios · artifact-inspected
+- [Android, Huawei and iOS: criteria-based tradeoffs](articles/platform-tradeoffs.md) — `platform-tradeoffs` · cross-platform · derived
+- [OpenHarmony UIAbility lifecycle source trace](articles/openharmony-uiability-lifecycle.md) — `openharmony-uiability-lifecycle` · openharmony · source-inspected
+- [Native Android SDK and AndroidX development](articles/native-development-workflow.md) — `native-development-workflow` · android · documentation
+- [Android CPU GPU performance development](articles/native-performance-workflow.md) — `native-performance-workflow` · android · documentation
+- [V3 bounded AI-assisted performance control](articles/v3-scheduling-research.md) — `v3-scheduling-research` · cross-platform · derived
+- [V3 performance limits and adversarial review](articles/v3-challenge-research.md) — `v3-challenge-research` · cross-platform · derived
+- [System apps: authority freshness and responsiveness](articles/core-apps-contracts.md) — `core-apps-contracts` · android · source-inspected
+- [Recovery boot health and hardware failure limits](articles/recovery-contracts.md) — `recovery-contracts` · android · documentation
+- [Foundation-first systems learning and engineering](articles/foundations-learning-map.md) — `foundations-learning-map` · cross-platform · derived
+- [V3X local red-team findings and quarantine guard](articles/v3x-redteam-and-guard.md) — `v3x-redteam-and-guard` · cross-platform · derived
+- [AV3X Antartica real M5 emulator measurements](articles/antartica-m5-runtime-results.md) — `antartica-m5-runtime-results` · android · derived
+- [Antartica: exact-release emulator acceptance and test pitfalls](articles/antartica-emulator-release-readiness.md) — `antartica-emulator-release-readiness` · android · derived
+- [Maze: building a real native Malaysia maps app](articles/maze-malaysia-map-build.md) — `maze-malaysia-map-build` · android · derived
+- [Maze revision 02: reliable free-user maps and native recovery](articles/maze-reliable-free-beta.md) — `maze-reliable-free-beta` · android · derived

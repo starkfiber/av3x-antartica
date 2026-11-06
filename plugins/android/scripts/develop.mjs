@@ -1,0 +1,3 @@
+import {development} from './development.mjs';
+const [command,...parts]=process.argv.slice(2),names={doctor:'android_sdk_doctor',inspect:'android_inspect_project',plan:'android_development_plan',acceptance:'android_acceptance_plan',rea:'android_rea_plan'};
+try{if(!Object.hasOwn(names,command))throw Error('Usage: develop.mjs doctor [SDK_DIRECTORY]|inspect PROJECT|plan TASK|acceptance TASK|rea ARTIFACT');const args=command==='doctor'?(parts[0]?{sdkDirectory:parts[0]}:{}):command==='inspect'?{directory:parts[0]}:command==='rea'?{artifact:parts[0]}:{task:parts.join(' ')};process.stdout.write(JSON.stringify(development(names[command],args),null,2)+'\n');}catch(e){process.stderr.write(e.message+'\n');process.exitCode=1;}

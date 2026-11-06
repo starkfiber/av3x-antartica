@@ -1,0 +1,785 @@
+{
+  "version": "3.2.0-antartica.6",
+  "files": [
+    {
+      "path": ".codex-plugin/mcp.json",
+      "sha256": "743bdc700d36eeb913366a33246093617c3466e6c3207d74616c96155c0e6b22"
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "da88c89a30b0f223be88f740770b2b0b775a0f9a668c13b3b1c4ca2b2b47fe8b"
+    },
+    {
+      "path": "ANTARTICA.md",
+      "sha256": "2782471d6a350ef0f2ffee37aea582515cb2a8575a2f53f3cafeb8d6110a247d"
+    },
+    {
+      "path": "ARTICLE-ERRATA.md",
+      "sha256": "1ddddffcd50356420b121a1b59078de0d69bb7f138497cfd20116d8713df847a"
+    },
+    {
+      "path": "INSTALL.md",
+      "sha256": "958958dbf2b36d17a2a8e45d78f010003f1cf1c422e925e9d4a06d0b7513206b"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "9f66c1712a255cf879a2b9e54dd197dc6678810a37f53cea217a18ae0e6b3ff2"
+    },
+    {
+      "path": "PROJECT-DIRECTION.md",
+      "sha256": "59aa5db875431067e23f4f3bae4f98d30a77cfd35a9784887d147ed43e40934a"
+    },
+    {
+      "path": "README.md",
+      "sha256": "313b27f605ebfc2410f5ad17b9ee84e6a65ea3538dda43d41bfd1c5453418cfb"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "1ee9cebbb1f3f63bfdd4077d8b35a572ed2ab05bfca34540ae117a549a5d67ca"
+    },
+    {
+      "path": "V1-ACCEPTANCE.md",
+      "sha256": "09ab52c40d6e6fb2ecc34e04e76c44bf723cbb36fb40c5ea2ea6dfb42ea5d86e"
+    },
+    {
+      "path": "V2-ENHANCEMENTS.md",
+      "sha256": "a1bcb80936d818abe6536a085dd3dd9935d3a96220e66a34f3b4fd7f36addfe9"
+    },
+    {
+      "path": "V2-VERIFICATION.md",
+      "sha256": "6f9914f57151c7edfab593be8edb35f74110b0152e200d743b87960600ee4951"
+    },
+    {
+      "path": "V3-VERIFICATION.md",
+      "sha256": "dbaee4d4334fe665ca257ae161f0d4d70aa4249c384a3dbee523c525e2c33ed3"
+    },
+    {
+      "path": "V3X-SECURITY.md",
+      "sha256": "917e38e9f4603dfd1baa0adff3626c33e0dc026331c7d4edc65c80b5fe191d4b"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "sha256": "09aa257ac939f9798f0fd444528c1e5ff9e1ebc0fd2da2f1248495f6bca10415"
+    },
+    {
+      "path": "atlas/CONTENTS.md",
+      "sha256": "3496b1caa98c075332ba2cfb0d543421fa68aedc9c85282a7d4d44edb2f26c0c"
+    },
+    {
+      "path": "atlas/articles/activity-process-lifecycle.md",
+      "sha256": "a3ecd8f8e50a113e6ea1859564c9345c7d143ca51cee65e6e6d3e44ec2bcd567"
+    },
+    {
+      "path": "atlas/articles/android-cpu-runtime-lab.md",
+      "sha256": "8fd702536af7c0492516347614fd54d12d4218b1e353ac74fb6cb830dbb6653f"
+    },
+    {
+      "path": "atlas/articles/android-startup-lab.md",
+      "sha256": "c84fedbc0400955fe54d2d17ae4b754bf3ddd23aeafce06e20be5d6323877421"
+    },
+    {
+      "path": "atlas/articles/android-systems-lab.md",
+      "sha256": "8fa2cf1632afdd958f38911662c60457654a504284d97ac39ee0d48d897be7dd"
+    },
+    {
+      "path": "atlas/articles/antartica-emulator-release-readiness.md",
+      "sha256": "14d022b43268ad43be4e67a9a5f569f36ef6245cf80d2dfd353117e8a4958925"
+    },
+    {
+      "path": "atlas/articles/antartica-m5-runtime-results.md",
+      "sha256": "9bdf1aa0f8c7b9e999ecde3032ca9aa3d1751e731048f82e8a64d20986f8838a"
+    },
+    {
+      "path": "atlas/articles/apk-static-lab.md",
+      "sha256": "b42fff220db8013d4d7de2e3dfce7a20cb7e2992a46fb3c40cf52936bcd0bf36"
+    },
+    {
+      "path": "atlas/articles/apple-cpu-gpu-lab.md",
+      "sha256": "0cde38b780f3b3be157faabf08c0c002ab082918fa58fa175eb556bdee469d8d"
+    },
+    {
+      "path": "atlas/articles/artifact-identity.md",
+      "sha256": "8972719d471e01100766931f365b473fb61d00fb868a5cb0807ef8dab415dba0"
+    },
+    {
+      "path": "atlas/articles/avb-integrity-lab.md",
+      "sha256": "741036cf176baa7ef71721f4999b8bd0bd4237c6601ec573747ba7f1cb589325"
+    },
+    {
+      "path": "atlas/articles/binder-ipc.md",
+      "sha256": "d5f402728c5c6dfc63bfc61b7a18ae2dc6bf394bb5ae8752c64ddd25bc80bf32"
+    },
+    {
+      "path": "atlas/articles/boot-stage-handoffs.md",
+      "sha256": "c775c7a873ce533ee3db625031ca58a87f7d690339f9b83bfc8680957759b052"
+    },
+    {
+      "path": "atlas/articles/code-representations.md",
+      "sha256": "6f5533e9eea8a7a96dc459144c7d3f36f42eebe0636016889a85f2e6b0b9c01d"
+    },
+    {
+      "path": "atlas/articles/container-transformations.md",
+      "sha256": "d07db0d05540636fc76d213a5bf3da4ae4e8069bc0c307c6b6a1edf5c1c91be8"
+    },
+    {
+      "path": "atlas/articles/core-apps-contracts.md",
+      "sha256": "4eaa48338f477794f04e25e571a86ac5e8b549a10d4ce7038cbf528d7bcbf0b6"
+    },
+    {
+      "path": "atlas/articles/drivers-device-boundaries.md",
+      "sha256": "db117eea758c59263e0a122d168de2dcd2fa766354b4a63c7e6a38f3a41b357e"
+    },
+    {
+      "path": "atlas/articles/durable-workflows.md",
+      "sha256": "d996d30e5ada97d68974ab659a19070aad5be4dccf5fa8c22122be3e9744c1f6"
+    },
+    {
+      "path": "atlas/articles/encryption-key-state.md",
+      "sha256": "fe7b3c8dfb38e27f531cdf53e270d300a5aeeaee43a0e45e244e3c15d352aac7"
+    },
+    {
+      "path": "atlas/articles/evidence-levels.md",
+      "sha256": "b7c3df78dd8a2e6b3a9922fe202374dc10221d1f21f76311bb72694ab206e97e"
+    },
+    {
+      "path": "atlas/articles/execution-state.md",
+      "sha256": "41b3d39472c07bc915fcca47d737e4ed60fbea8361f54e7aa6aa1dfa018de2c8"
+    },
+    {
+      "path": "atlas/articles/foundations-learning-map.md",
+      "sha256": "3273318beed450a793687324170619ff90cd434b366b775870f7435d5721c1b1"
+    },
+    {
+      "path": "atlas/articles/gpu-frame-engine-lab.md",
+      "sha256": "9f36beb8b06402933b812fc2a2ab6175f250d7d493e4de910e7d46d28b002647"
+    },
+    {
+      "path": "atlas/articles/graphics-presentation.md",
+      "sha256": "32316deecc235913909efcb6388dff793957150e365fea6c287b45d63a9617a5"
+    },
+    {
+      "path": "atlas/articles/hal-contracts.md",
+      "sha256": "cf1fc116273d48538eb03a4eda8398f4846bc3090e4c20517f63ebc97f42c7d6"
+    },
+    {
+      "path": "atlas/articles/huawei-platform-families.md",
+      "sha256": "c6a21950c35fa84c44c5bee01a96f4d553ed9ee6ae34b5236e3092769db261b7"
+    },
+    {
+      "path": "atlas/articles/investigation-questions.md",
+      "sha256": "faa2bc8ad208b9cf78da2c1a5842257eb1574ec4ff947d74f5ac903b0bda5d9b"
+    },
+    {
+      "path": "atlas/articles/ios-firmware-lab.md",
+      "sha256": "bbfe47d1d6acf576484846d8fb78752724456af1b7002ee86df4a9fbb0b09694"
+    },
+    {
+      "path": "atlas/articles/ios-iboot-lab.md",
+      "sha256": "b2a7254c066d06a9e3e365b7c1387bea30a81f46a3cedbbc643ae6d4937b971f"
+    },
+    {
+      "path": "atlas/articles/ios-restore-identity-comparison.md",
+      "sha256": "f3dc067790feacf9f224f8babfc4534af4440e370eda1c2cd575f72ec67a3e09"
+    },
+    {
+      "path": "atlas/articles/keys-trust.md",
+      "sha256": "451593b13dc8d4ca3dabd2f7edc838cf51ca287d3d9e44b48e9ae387309c3062"
+    },
+    {
+      "path": "atlas/articles/maze-malaysia-map-build.md",
+      "sha256": "136ba796a4151e3c41edf6cd8ab8ace00ca342204c4cf651c7b24daffdcf0d81"
+    },
+    {
+      "path": "atlas/articles/maze-reliable-free-beta.md",
+      "sha256": "afddfb6d368f737bd2389a0496a05c128304ea63d128c1ce4afc043dfdb4ebcb"
+    },
+    {
+      "path": "atlas/articles/media-pipeline.md",
+      "sha256": "a02eac0b2ccdd9e13de4b28a1802f7f8139f9b50fdcf2a72be8b4b3b11934fea"
+    },
+    {
+      "path": "atlas/articles/native-development-workflow.md",
+      "sha256": "7adf4adbf3e6bac0a4b122855870aa59dac3a416466b58df0669611a209820c6"
+    },
+    {
+      "path": "atlas/articles/native-performance-workflow.md",
+      "sha256": "86b27a166a2b50c0f72f35db981ac2721868deb8aabb58e4535b3028d1ba616f"
+    },
+    {
+      "path": "atlas/articles/negative-controls.md",
+      "sha256": "224099d7b4dc89b78abdd6f69c97c84cc05c52b9bf4b54022b3979d37bd3cea1"
+    },
+    {
+      "path": "atlas/articles/network-observation.md",
+      "sha256": "839c9be9acdf1a581609e9ef2d8aa78a62f84ea5c35535d2db155c275d3f3483"
+    },
+    {
+      "path": "atlas/articles/openharmony-uiability-lifecycle.md",
+      "sha256": "0c7bb384fe0ec52a4cdf04383831f9038c638ae8e0fd377cf09a83c8bfa83575"
+    },
+    {
+      "path": "atlas/articles/permission-checks.md",
+      "sha256": "e393d263e4de4bf12bf59fc842d07f78c38456437808e7dd9321e13d174c4fd3"
+    },
+    {
+      "path": "atlas/articles/platform-tradeoffs.md",
+      "sha256": "d4b067ac8aa5edb597f5bc8c0ba638b226becdfbd50b4edfec0369434bffa88f"
+    },
+    {
+      "path": "atlas/articles/practical-labs.md",
+      "sha256": "e7f4ff05049c5d9e9b6e3b735c74d5b36b9939a7139890dab21f44b4eb588919"
+    },
+    {
+      "path": "atlas/articles/queues-scheduling.md",
+      "sha256": "09d4c456595d1942c6eae6e09121da1513ed4bf2246335c2022eeb4681b3b18c"
+    },
+    {
+      "path": "atlas/articles/recovery-contracts.md",
+      "sha256": "43e7a24d1336e2905398609e9765504eaa74215e92233b87b35ce5a531c6bb88"
+    },
+    {
+      "path": "atlas/articles/reference-boundaries.md",
+      "sha256": "8fc1edc49f2875aa5ac36cfdbfc5f3e51afe70daf5b79b4bbfd2f23b3312a000"
+    },
+    {
+      "path": "atlas/articles/resources-ui.md",
+      "sha256": "f86ba089b0fa6694a2653e5007a6ddfd2f7ceb309459235d338ba2c100975757"
+    },
+    {
+      "path": "atlas/articles/system-services.md",
+      "sha256": "888cbbb1978619d5e0d77cb18a2d8f73d7d582a53a275ad30b8a894afb12bf7f"
+    },
+    {
+      "path": "atlas/articles/trust-cache-records.md",
+      "sha256": "0955fa47fab7200c7862c4c1628ca3b43ba361a66f19308c22d950d6a086d2af"
+    },
+    {
+      "path": "atlas/articles/updates-version-boundaries.md",
+      "sha256": "99413eb029664571814c0156eab575f0b6e3b5dc9496006f8b7ce7a664f09e98"
+    },
+    {
+      "path": "atlas/articles/v3-challenge-research.md",
+      "sha256": "7c626c21e31085ea934207a47747ef2bf0aa599f6bc1e95ee8fedc3ed964f062"
+    },
+    {
+      "path": "atlas/articles/v3-scheduling-research.md",
+      "sha256": "02e7910a5a71f51b2a3cfebc24033b19b85cb40b816f6bbd5bf54acfc461c83e"
+    },
+    {
+      "path": "atlas/articles/v3x-redteam-and-guard.md",
+      "sha256": "225ab1689a79ca574ad3037166f665d90eb5cb39a0c2c8fe858914dfeb3bf3ee"
+    },
+    {
+      "path": "atlas/catalog.json",
+      "sha256": "cebaa4da46ca4571c510a4a06c979eb9da5e12c1e101b1b2655d704677fc5277"
+    },
+    {
+      "path": "atlas/comparison-import-provenance.json",
+      "sha256": "f9ab21b8c7ef5a1895c78ff6f24797336d4747c91cf5085567b3940c0b673c2a"
+    },
+    {
+      "path": "atlas/import-provenance.json",
+      "sha256": "61dedea42504509ca4366fd8d1d65e75a199fb242322fd47c4a5f2c8f88758cb"
+    },
+    {
+      "path": "atlas/index.html",
+      "sha256": "1f82ec309faed4bcc8624b10557564f7c0a47857a591478cb6355fc57753198e"
+    },
+    {
+      "path": "docs/COMPARISONS.md",
+      "sha256": "daaedb9c6e92d7ce51b82106ab11d3be67a41d3f9195b8bd6682917ecc14788b"
+    },
+    {
+      "path": "docs/MCP.md",
+      "sha256": "109295a8ab55c25985e885ea420a368311c90f56caccd1178d729c5de3a17872"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "sha256": "7df9d3469c8fde2bec098e5415a7bbcb6aea26f2d3ea2278098eb50721cefd74"
+    },
+    {
+      "path": "docs/WALKTHROUGH.md",
+      "sha256": "d55a053b2f56fb0d344abf6d49ef61d47900ca3a6df324605d2c7de433c425c5"
+    },
+    {
+      "path": "examples/README.md",
+      "sha256": "6c1d706e2987669f25726040e48a7518fbe653b2a968b30eaa3340511444384a"
+    },
+    {
+      "path": "examples/androidx-native-demo/.gitignore",
+      "sha256": "f42f7aa3613683c2d80f19217dc2401101a12fb2aa280afbac9e6adc6fb96394"
+    },
+    {
+      "path": "examples/androidx-native-demo/README.md",
+      "sha256": "7e668321d9758023b994001e5036e507cf8ba25202c6b42bdfaf30a8cfa50702"
+    },
+    {
+      "path": "examples/androidx-native-demo/app/build.gradle.kts",
+      "sha256": "bd0b5b025090c9f7186371485abd27a16cba8942cd9f6959bfb19f9e94059b08"
+    },
+    {
+      "path": "examples/androidx-native-demo/app/src/main/AndroidManifest.xml",
+      "sha256": "ddcbf55f9870ea1c00bd33202b70b73f4d692fb8f850441d4be7e47578a690ed"
+    },
+    {
+      "path": "examples/androidx-native-demo/app/src/main/java/dev/atlas/demo/MainActivity.kt",
+      "sha256": "a66fd75a14426ba9fdfb07b233321ef1c3b42df6e345ddc33f1e8461c3bcfae5"
+    },
+    {
+      "path": "examples/androidx-native-demo/app/src/main/res/values/styles.xml",
+      "sha256": "666e3b5b41ad17c7d9416077b1174fda017cd46fa5a7b7e76695b74c2e48561d"
+    },
+    {
+      "path": "examples/androidx-native-demo/build-receipt.json",
+      "sha256": "ed3d40acef84703e0cccd46f509896623f4e7f16d078bd6cb0f62924dfa15a44"
+    },
+    {
+      "path": "examples/androidx-native-demo/build.gradle.kts",
+      "sha256": "0afaa64da603e292af67c1157dc4e8af23d9b173a2e3b6b5711620b6e0f37131"
+    },
+    {
+      "path": "examples/androidx-native-demo/gradle.properties",
+      "sha256": "a467f0619f397329e116da1ac68587d5ba35ad2097abb9b2a26212bdcbe7452d"
+    },
+    {
+      "path": "examples/androidx-native-demo/gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172"
+    },
+    {
+      "path": "examples/androidx-native-demo/gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "24c095e91d0a4e478801f313dc6ea9ead9c87fde9f1e45715e98c83cd1a1ce62"
+    },
+    {
+      "path": "examples/androidx-native-demo/gradlew",
+      "sha256": "b187b4c52e749f5760afdd6fadc31b2a98ad35fb249bf0dff03b72650f320409"
+    },
+    {
+      "path": "examples/androidx-native-demo/gradlew.bat",
+      "sha256": "94102713eb8fb22d032397924c0f38ab2da783ba60d07054339f1190a0c4e2cd"
+    },
+    {
+      "path": "examples/androidx-native-demo/settings.gradle.kts",
+      "sha256": "02388c71e3e50de13308ac4132cd2e63dd6f5659dac610777bc69596a7f1e5cb"
+    },
+    {
+      "path": "examples/antartica-release/README.md",
+      "sha256": "aef5d0d55b96deb72b92b4d82280362bd9bd82f6e3fef42ff0ba01c3aa93b099"
+    },
+    {
+      "path": "examples/antartica-release/app/benchmark-proguard-rules.pro",
+      "sha256": "8663d7f68594f1a70bb6802178bce6b051b6d3663a1ad83ad1a33ddddac49ba0"
+    },
+    {
+      "path": "examples/antartica-release/app/build.gradle.kts",
+      "sha256": "90b9625a7a62b3a3ed695e7bf65c88e6a295dc47797b6077c872fdbecc325ff2"
+    },
+    {
+      "path": "examples/antartica-release/app/proguard-rules.pro",
+      "sha256": "15c5b56c68a7d694bd1392b533bf91817645e42748bfdfd42bfd3b1fc38a7c41"
+    },
+    {
+      "path": "examples/antartica-release/app/src/androidTest/java/dev/atlas/demo/AtlasInstrumentedTest.kt",
+      "sha256": "991c7064d7b96f1cb85ff44e47dff3a6124265a400564d469e8e8040cd68f015"
+    },
+    {
+      "path": "examples/antartica-release/app/src/benchmark/AndroidManifest.xml",
+      "sha256": "382cc8254a9432d0e4cf272d11bd79227d9020f381fe6726371daec6284816da"
+    },
+    {
+      "path": "examples/antartica-release/app/src/main/AndroidManifest.xml",
+      "sha256": "afbfd7586d7200a26ed482ae4c906a3d6e136a9bf2c2c832fa2b9f59c9c6ba9d"
+    },
+    {
+      "path": "examples/antartica-release/app/src/main/java/dev/atlas/demo/MainActivity.kt",
+      "sha256": "a191f1c4883b7623660f585284e454c6cfef18ab573f8a636cc54cf20a75f344"
+    },
+    {
+      "path": "examples/antartica-release/app/src/main/java/dev/atlas/demo/SourceLauncher.kt",
+      "sha256": "fe3f728ceebc45fe1d4dd555837b80ff10e458c4b587f16f44f0aa358850541c"
+    },
+    {
+      "path": "examples/antartica-release/app/src/main/java/dev/atlas/demo/TimingModel.kt",
+      "sha256": "5ec5efc7e874a5912274223590b81aba4dc6a9992ece071a7f5b3166efb3cd9e"
+    },
+    {
+      "path": "examples/antartica-release/app/src/main/res/drawable/ic_atlas.xml",
+      "sha256": "e9dbd36f75dc3151222457674b411344661ebc2388dde78399c526e835c4ea0e"
+    },
+    {
+      "path": "examples/antartica-release/app/src/main/res/values/styles.xml",
+      "sha256": "666e3b5b41ad17c7d9416077b1174fda017cd46fa5a7b7e76695b74c2e48561d"
+    },
+    {
+      "path": "examples/antartica-release/app/src/main/res/xml/backup_rules.xml",
+      "sha256": "ea94fce7212ab7b4f52c461778b9553455088332ae6898606b7084c9b5d1c2eb"
+    },
+    {
+      "path": "examples/antartica-release/app/src/main/res/xml/data_extraction_rules.xml",
+      "sha256": "b0e88f2e1ffb1c8de5783db430a938f0bb86987ded7aca3b5cf77590247ae09d"
+    },
+    {
+      "path": "examples/antartica-release/app/src/test/java/dev/atlas/demo/SourceLauncherTest.kt",
+      "sha256": "734da7428dad6cd9653df0b76272a0ae2eca28449ef9221faa93cbf9dcef3be4"
+    },
+    {
+      "path": "examples/antartica-release/app/src/test/java/dev/atlas/demo/TimingModelTest.kt",
+      "sha256": "1987e822e6bb741968254efda1abd999f210e0bd9b1d4ab7770bc6ecbc8cae8a"
+    },
+    {
+      "path": "examples/antartica-release/app/test-proguard-rules.pro",
+      "sha256": "efd9f3b5ed3dec13db1d8c93adb0a71e9a9e8285af6bcbc1462f86b78a821b47"
+    },
+    {
+      "path": "examples/antartica-release/blackbox/build.gradle.kts",
+      "sha256": "b557fcd8f33651a310852f6bb319f5eafb3f15d290d41cd5a4349da05b0aa41a"
+    },
+    {
+      "path": "examples/antartica-release/blackbox/src/main/AndroidManifest.xml",
+      "sha256": "fa275d92572e87e877ba782a786940c0ca712d3cf557b5f17e28bfa12f6709dd"
+    },
+    {
+      "path": "examples/antartica-release/blackbox/src/main/java/dev/atlas/blackbox/AtlasBlackBoxTest.java",
+      "sha256": "c701dee856a4e2d4b109ef8017e9c1efe98dda6f92316a8f799c834adbe1fa92"
+    },
+    {
+      "path": "examples/antartica-release/build.gradle.kts",
+      "sha256": "8614d329fbf025982209d496b7cd4ca2e85df42d5ba93e702b09ec3f1945fc0e"
+    },
+    {
+      "path": "examples/antartica-release/gradle.properties",
+      "sha256": "a467f0619f397329e116da1ac68587d5ba35ad2097abb9b2a26212bdcbe7452d"
+    },
+    {
+      "path": "examples/antartica-release/gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172"
+    },
+    {
+      "path": "examples/antartica-release/gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "24c095e91d0a4e478801f313dc6ea9ead9c87fde9f1e45715e98c83cd1a1ce62"
+    },
+    {
+      "path": "examples/antartica-release/gradlew",
+      "sha256": "b187b4c52e749f5760afdd6fadc31b2a98ad35fb249bf0dff03b72650f320409"
+    },
+    {
+      "path": "examples/antartica-release/gradlew.bat",
+      "sha256": "94102713eb8fb22d032397924c0f38ab2da783ba60d07054339f1190a0c4e2cd"
+    },
+    {
+      "path": "examples/antartica-release/settings.gradle.kts",
+      "sha256": "1894b612a776d31c3b667a9b0c7aa6e2c21994085252c534363dada0dbbe3276"
+    },
+    {
+      "path": "examples/maze-map/.gitignore",
+      "sha256": "3160e8b494b7a3b9f5c5b71823d764c6f4c65a072fb72cdc4573da95cda7c17d"
+    },
+    {
+      "path": "examples/maze-map/DESIGN.md",
+      "sha256": "c6f350cb351023bb1e3814f42d7546af26ef80b7b01870cacf4f07cf9847db6f"
+    },
+    {
+      "path": "examples/maze-map/PUBLISHING.md",
+      "sha256": "eee637be92b068238e44a5d62b3648c5721d10f5890de96b37d5f0b1b6264166"
+    },
+    {
+      "path": "examples/maze-map/README.md",
+      "sha256": "07e7fb347b422a8dd1e65e37a858d0ef0d44dd0b1b0d80bcb83bc4355003c80a"
+    },
+    {
+      "path": "examples/maze-map/THIRD_PARTY_NOTICES.md",
+      "sha256": "7e9a8a20bcefc5ae921d84c90987be1524c104e6f4142c09bdc9a1079ba1a96c"
+    },
+    {
+      "path": "examples/maze-map/app/build.gradle.kts",
+      "sha256": "44ba722ba56a8ccb63a03bdb1c1b6702fc2808dfba1c3669f063cc8965e61bed"
+    },
+    {
+      "path": "examples/maze-map/app/proguard-rules.pro",
+      "sha256": "542083b93808de68f2f31bc6efbb19003b20de59d3a098ecafbea66d96f81ed5"
+    },
+    {
+      "path": "examples/maze-map/app/src/lab/AndroidManifest.xml",
+      "sha256": "69b2ffc224e64e09c7e8c9e429d3ec15633acf14b6d061cd5586b83fcce657a1"
+    },
+    {
+      "path": "examples/maze-map/app/src/lab/res/xml/lab_network_security.xml",
+      "sha256": "b3423c856fc932e755d18cf8643926865e555256f825527a75c32627aadff586"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/AndroidManifest.xml",
+      "sha256": "68af977240b07533518e4cb2db7e57cdb3117d22e7f1653e5ad98dc62c2e543f"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/java/my/maze/malaysia/MainActivity.kt",
+      "sha256": "efa6b65f304fcad3e3ac112628d64e0ca8d0c0d074571e87b9f1e4ec1558c3a6"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/java/my/maze/malaysia/MazeData.kt",
+      "sha256": "816bd6d611f812d27d4c2c71c506afe8c9df92899853ffed29a0aadacd5a9ceb"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/java/my/maze/malaysia/MazeMap.kt",
+      "sha256": "c571003b2e05704f67675fcb1bc6ce6c168ecd963e3d82d59c009f49dfde1b02"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/java/my/maze/malaysia/MazeOffline.kt",
+      "sha256": "4b5e530250ca91454280fde827d34a913e7c940ee91bbf2d0a85c9c2b0d767f1"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/java/my/maze/malaysia/MazeRecovery.kt",
+      "sha256": "11dfa672d3fcffa6caa8a868913d316bc5da1303f1f85cb489e2e5e8676294d5"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/java/my/maze/malaysia/MazeRepository.kt",
+      "sha256": "1374a6016696e4ab44559404741e6d969abcfc057dc90dbe36492d61325482d8"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/java/my/maze/malaysia/MazeTheme.kt",
+      "sha256": "8fffd1dc534743f2c35dd0f4b9ce5602f55fb45af3f4a427eff202ebb053732a"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/java/my/maze/malaysia/MazeTrips.kt",
+      "sha256": "28f4e0d968863b87e27adb8ef735e3486c5298ba6aa49f378a07c0cf5da95f2b"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/java/my/maze/malaysia/MazeViewModel.kt",
+      "sha256": "4988ff111c3e4496dbcfc07ae9ee5944087028eefbb519e2391d018438881429"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/res/drawable/maze_icon.xml",
+      "sha256": "b963dcc76eeb88211d302029211c9ae8f87b06a7f3f31836d36ae72acae25f7b"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/res/values-v27/styles.xml",
+      "sha256": "aef271acec71b6458443bf28f085c60302c9e37b0ef42182fa11ef6b5789e2cd"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/res/values/styles.xml",
+      "sha256": "ce292194fc4232f7a234b7af98eafd57b46b9a4539e0d013095aad9eb4743b62"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/res/xml/backup_rules.xml",
+      "sha256": "ea94fce7212ab7b4f52c461778b9553455088332ae6898606b7084c9b5d1c2eb"
+    },
+    {
+      "path": "examples/maze-map/app/src/main/res/xml/data_extraction_rules.xml",
+      "sha256": "b0e88f2e1ffb1c8de5783db430a938f0bb86987ded7aca3b5cf77590247ae09d"
+    },
+    {
+      "path": "examples/maze-map/app/src/test/java/my/maze/malaysia/MazeDataTest.kt",
+      "sha256": "1a214a89ad8c924435b8c355ebfcdaa7bf70c632c57de0f7719154920c44e3e7"
+    },
+    {
+      "path": "examples/maze-map/app/src/test/java/my/maze/malaysia/MazeRecoveryTest.kt",
+      "sha256": "4fd3765ccba3894efbf82e1e6d07357b5dd21130f9fdd0df44dd1b7fec41238a"
+    },
+    {
+      "path": "examples/maze-map/build.gradle.kts",
+      "sha256": "8614d329fbf025982209d496b7cd4ca2e85df42d5ba93e702b09ec3f1945fc0e"
+    },
+    {
+      "path": "examples/maze-map/gradle.properties",
+      "sha256": "a467f0619f397329e116da1ac68587d5ba35ad2097abb9b2a26212bdcbe7452d"
+    },
+    {
+      "path": "examples/maze-map/gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172"
+    },
+    {
+      "path": "examples/maze-map/gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "24c095e91d0a4e478801f313dc6ea9ead9c87fde9f1e45715e98c83cd1a1ce62"
+    },
+    {
+      "path": "examples/maze-map/gradlew",
+      "sha256": "b187b4c52e749f5760afdd6fadc31b2a98ad35fb249bf0dff03b72650f320409"
+    },
+    {
+      "path": "examples/maze-map/gradlew.bat",
+      "sha256": "94102713eb8fb22d032397924c0f38ab2da783ba60d07054339f1190a0c4e2cd"
+    },
+    {
+      "path": "examples/maze-map/settings.gradle.kts",
+      "sha256": "cec75a1841a04a09c93cc2f3865942061ef60d21c521c7e79ce3ba06d9be556c"
+    },
+    {
+      "path": "examples/maze-map/tools/fixtures/kl-sentral-klcc.json",
+      "sha256": "47168b85d53a9b19947300698959e6b99e0621169548a796bac6c5ae9ab3ba71"
+    },
+    {
+      "path": "examples/maze-map/tools/fixtures/provenance.json",
+      "sha256": "d43519d971fe46b91bb48d1157a0547a1f8742595ee40024af499d446681ffe8"
+    },
+    {
+      "path": "examples/maze-map/tools/lab-gateway.mjs",
+      "sha256": "8f12bea966ec52d42ec51d4e5b8dff41f9f00cc97d2043b6889dd774fdb893d4"
+    },
+    {
+      "path": "examples/maze-map/tools/lab-gateway.test.mjs",
+      "sha256": "4534d63374c55323c6e53d4da7c4acc8e307d3e2cb6be2e86161feccda3e31c0"
+    },
+    {
+      "path": "licenses/Apache-2.0.txt",
+      "sha256": "9536d88ea948603d18e232a13f5958d67807cd80828036b082bff171d2cf0703"
+    },
+    {
+      "path": "research/DECISIONS.md",
+      "sha256": "ab612136fd2e705e3f8342c437b94737cd05e400f41f56ddb733da9698a26e51"
+    },
+    {
+      "path": "research/android-position.md",
+      "sha256": "86bb1e0fde90d061aef22ad5e8d0a4aa760ae47ac5b6e820797638b166fed912"
+    },
+    {
+      "path": "research/apple-position.md",
+      "sha256": "9b6ff4276a317b5a38de3fb049c9d4149f400a934fb0dd02b79bab34ff4b5c7c"
+    },
+    {
+      "path": "research/v3/BLUEPRINT.md",
+      "sha256": "2fd869fd859262da5c9f374d5ea57cfb68c0051d121450998cc123710b71e6e9"
+    },
+    {
+      "path": "research/v3/TEN-ENHANCEMENTS.md",
+      "sha256": "25d6e0fc6edd9939ef7a64be7127d021636af8e7674609eec5d26494a193234b"
+    },
+    {
+      "path": "research/v3/UIUX-UPSTREAM.md",
+      "sha256": "051d14019f7fcadd83b705d2b2144fd20b4664ac13285ff83bbb6dae8b3c8d4f"
+    },
+    {
+      "path": "research/v3/model.mjs",
+      "sha256": "0c29494fb0774741dd585c5a55857d435a2e22692de44d76154a1baa3af88dfc"
+    },
+    {
+      "path": "research/v3/v3-challenge.md",
+      "sha256": "7c626c21e31085ea934207a47747ef2bf0aa599f6bc1e95ee8fedc3ed964f062"
+    },
+    {
+      "path": "research/v3/v3-scheduling.md",
+      "sha256": "02e7910a5a71f51b2a3cfebc24033b19b85cb40b816f6bbd5bf54acfc461c83e"
+    },
+    {
+      "path": "scripts/atlas-template.html",
+      "sha256": "6472a734c1ec667a7b1964d5d88b5fb7e87bed2552bb74bfa8ac5b284266d7f4"
+    },
+    {
+      "path": "scripts/atlas.mjs",
+      "sha256": "65a184d024c49d11b85a3ee6443ef42aaeff6889010c2020bbbf5ddf55b31dae"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "sha256": "11565a525d5ebd78a8610ff5a8694a9fc71349ea62c0992ac7a9391e266080f3"
+    },
+    {
+      "path": "scripts/develop.mjs",
+      "sha256": "045f6e1772abba833e5fd4fd4f9d4e663e444b5f46875c7039da7e673f83001e"
+    },
+    {
+      "path": "scripts/development.mjs",
+      "sha256": "b44f3814f0910f9ef5574318bb29d70ce675d47a3bd392a9833189b3c5063324"
+    },
+    {
+      "path": "scripts/frame-stats.mjs",
+      "sha256": "c3077ea9efbed127ef9c3ef6afe708a58600ca7f3f0bf5bcbee2c54d529431ba"
+    },
+    {
+      "path": "scripts/import-comparisons.py",
+      "sha256": "21ef462ac801aa7a06f241fe376916e5b703bab1c65559d7eb5420b7ccd58b4c"
+    },
+    {
+      "path": "scripts/inline-links.mjs",
+      "sha256": "55bf5f137d61d21a8095c137727cdfa251f7bd7b76430883d2a2f7b03d0640db"
+    },
+    {
+      "path": "scripts/launch-mcp.sh",
+      "sha256": "c516987cb729b157c126756137bc7ee586c3f8d58de6a4f2ee082bbcdd886cf1"
+    },
+    {
+      "path": "scripts/mcp-server.mjs",
+      "sha256": "2c2fa2cab2aeb97b16f0afb29e15612bba88c63a5fe01ae01739cd8904611e88"
+    },
+    {
+      "path": "scripts/scaffold.mjs",
+      "sha256": "a121619ea7fa7d2b4179fc82a4182dd33f4ab15f217c611b06226570756917cf"
+    },
+    {
+      "path": "scripts/transport.mjs",
+      "sha256": "205b278d868f720c16717f46f497469e560524c7cf0201ffafa592975c6ca7fc"
+    },
+    {
+      "path": "scripts/v3-contracts.mjs",
+      "sha256": "c3197e630e62e2fb73e5994b58c5c69c3a014feb4e0c2dd20228a91d7db2e9a1"
+    },
+    {
+      "path": "scripts/v3x-guard.mjs",
+      "sha256": "7520464a54e0f1d165d825d61de6052ad78ddc7f91e93a7c9eb7566f11509806"
+    },
+    {
+      "path": "scripts/version.mjs",
+      "sha256": "951c19b56d3ff31384d6722f46f0c06f8f50b8d83a3da212c275ec92b7f11611"
+    },
+    {
+      "path": "skills/android/SKILL.md",
+      "sha256": "5e9524984dd482bb9af0e72f6be54d5e9be732f1f1ee34ea32d00eed4bab303f"
+    },
+    {
+      "path": "skills/android/agents/openai.yaml",
+      "sha256": "442387d646fc44da4d4e58ed5410dd23ff128c485dd005d7774214a3ef56377b"
+    },
+    {
+      "path": "skills/android/references/core-apps.md",
+      "sha256": "4eaa48338f477794f04e25e571a86ac5e8b549a10d4ce7038cbf528d7bcbf0b6"
+    },
+    {
+      "path": "skills/android/references/development.md",
+      "sha256": "7adf4adbf3e6bac0a4b122855870aa59dac3a416466b58df0669611a209820c6"
+    },
+    {
+      "path": "skills/android/references/foundations.md",
+      "sha256": "3273318beed450a793687324170619ff90cd434b366b775870f7435d5721c1b1"
+    },
+    {
+      "path": "skills/android/references/performance.md",
+      "sha256": "e7010e06f5614128c5319fd98763bc04ce836a5aa6d9f199a7290d177215d0b3"
+    },
+    {
+      "path": "skills/android/references/recovery.md",
+      "sha256": "43e7a24d1336e2905398609e9765504eaa74215e92233b87b35ce5a531c6bb88"
+    },
+    {
+      "path": "skills/android/references/release-readiness.md",
+      "sha256": "80a125c95a40ff0681de9f6ff6169d21d4b00bd266a396cb3d19d49b31ce71fc"
+    },
+    {
+      "path": "tests/atlas.test.mjs",
+      "sha256": "8536addeada181d7b360deb9e8a922be831a3981b625b714d1bd19e52d7fafa3"
+    },
+    {
+      "path": "tests/development.test.mjs",
+      "sha256": "2b34bba4f77b28a58a9a0b7e8a7cedbcb08aaa8fa0e9ca6c4d1729e70a416499"
+    },
+    {
+      "path": "tests/frame-stats.test.mjs",
+      "sha256": "be4ab5a9ec7f559ed74687226e1eb65463d7d0ac1f4351883f70e7c91b44919e"
+    },
+    {
+      "path": "tests/redteam.test.mjs",
+      "sha256": "082d67aaf03428ce2cbd6c1f2b8082d2fb32bd9f45bae08aa5cfa37814b7de48"
+    },
+    {
+      "path": "tests/scaffold.test.mjs",
+      "sha256": "ea41c2d4624ac43d6c9c07ef4fb3a12e4c0a0882f133a658168a9ba5c04fc0a9"
+    },
+    {
+      "path": "tests/update-portability.test.mjs",
+      "sha256": "eb594d45fe5b8157d655c76baba80571a1cf7d9d96100e3d989982afbde713f0"
+    },
+    {
+      "path": "tests/v3-contracts.test.mjs",
+      "sha256": "6a608cea84d511db7fb8b95ebda2bd9cbe9d257d58b11694394d5223f026528c"
+    },
+    {
+      "path": "tests/v3-model.test.mjs",
+      "sha256": "dd10461d084c0241939e2b5fceea6316be85c675a2bd1e90b2c393fb1f844ca9"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.gradle/
+.kotlin/
+**/build/
+local.properties
+research/chrome-owned/
+*.keystore
+*.jks
+
+artifacts/*.apk
+artifacts/*.zip
+.DS_Store

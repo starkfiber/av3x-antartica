@@ -1,0 +1,4 @@
+interface:
+  display_name: "Android Development & Atlas"
+  short_description: "SDK-native apps, AndroidX and REA evidence"
+  default_prompt: "Use $android to implement and verify this native Android app feature."

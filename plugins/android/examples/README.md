@@ -1,0 +1,3 @@
+Native Compose Material3 demonstration: androidx-native-demo. Set your Android SDK location and use the pinned wrapper/JDK17. The original research build and REA receipts live in the project-local case, not the installed cache. No APK or SDK is bundled.
+
+The `antartica-release` sample adds a minified unsigned release variant, lab benchmark variant, guarded external-source handling, icon/backup resources, unit/debug tests and an exact-emulator-restricted black-box harness. Read the release-readiness atlas topic for actual test outcomes and retained failures. No production signing identity or device auto-selection is included.

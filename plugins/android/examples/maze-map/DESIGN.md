@@ -1,0 +1,3 @@
+# Maze design direction
+
+UI/UX Pro Max queries returned parking/wellness and a marketing hero/testimonial pattern. Both are rejected as off-topic for navigation; retained in research/evidence. Manual native fallback: map-first, no marketing sections; forest-green ink #103C35, primary #0B715F, warm-white surfaces #F7FAF6, amber #A45A13 only for caution. Android system sans font, minimum48dp actions, labelled location button, visible source attribution, scrollable route details, status not conveyed by color alone. Use measured availability labels: road estimate, no live traffic, local report, route rehearsal. Never draw a straight connector as a road route on network failure.

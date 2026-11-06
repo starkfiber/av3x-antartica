@@ -1,0 +1,1 @@
+{"name":"av3x-antartica","private":true,"version":"3.2.0-antartica.6","type":"module","engines":{"node":">=22"},"scripts":{"test":"node scripts/check.mjs","build":"node scripts/build.mjs"},"license":"MIT"}

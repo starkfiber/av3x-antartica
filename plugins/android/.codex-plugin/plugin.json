@@ -1,0 +1,22 @@
+{
+  "name": "android",
+  "version": "3.2.0-antartica.6",
+  "requires_local_executor": true,
+  "description": "Android SDK-native development and evidence atlas: AndroidX UI, project/toolchain inspection, app acceptance and REA-assisted investigation.",
+  "skills": "./skills",
+  "mcpServers": "./.codex-plugin/mcp.json",
+  "interface": {
+    "displayName": "AV3X Antartica",
+    "shortDescription": "Foundation-first development with measured runtime evidence",
+    "category": "Developer Tools",
+    "defaultPrompt": [
+      "Use $android to implement and verify this Android app feature with supported SDK and AndroidX APIs."
+    ]
+  },
+  "author": {
+    "name": "ilanvkn",
+    "url": "https://github.com/ilanvkn"
+  },
+  "homepage": "https://github.com/ilanvkn/av3x-antartica",
+  "repository": "https://github.com/ilanvkn/av3x-antartica"
+}
