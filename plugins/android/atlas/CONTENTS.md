@@ -53,3 +53,4 @@ Curated evidence-linked reference. No whole-OS completeness or runtime validatio
 - [Antartica: exact-release emulator acceptance and test pitfalls](articles/antartica-emulator-release-readiness.md) — `antartica-emulator-release-readiness` · android · derived
 - [Maze: building a real native Malaysia maps app](articles/maze-malaysia-map-build.md) — `maze-malaysia-map-build` · android · derived
 - [Maze revision 02: reliable free-user maps and native recovery](articles/maze-reliable-free-beta.md) — `maze-reliable-free-beta` · android · derived
+- [Maze offline community pipeline: licensed data and source/build boundaries](articles/maze-offline-community-pipeline.md) — `maze-offline-community-pipeline` · android · source-inspected

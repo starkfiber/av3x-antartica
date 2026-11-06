@@ -1863,7 +1863,39 @@
         "Emulator only; physical-device and full assistive checks remain open."
       ],
       "sha256": "afddfb6d368f737bd2389a0496a05c128304ea63d128c1ce4afc043dfdb4ebcb"
+    },
+    {
+      "id": "maze-offline-community-pipeline",
+      "title": "Maze offline community pipeline: licensed data and source/build boundaries",
+      "platform": "android",
+      "tags": [
+        "maze",
+        "maps",
+        "offline",
+        "sqlite",
+        "licensing",
+        "packaging",
+        "community",
+        "publishing"
+      ],
+      "evidenceLevel": "source-inspected",
+      "version": "2026-11-06; Maze community commit463582fa7487692ab5ca174935c905428e38700b; source/build proof, not new runtime acceptance",
+      "summary": "Separate app/source/data/font deliverables, pin pack hashes, retain data licenses and distinguish build tests from offline navigation proof.",
+      "path": "articles/maze-offline-community-pipeline.md",
+      "sourcePaths": [],
+      "sourceUrls": [
+        "https://github.com/ilanvkn/maze-malaysia-way/tree/463582fa7487692ab5ca174935c905428e38700b",
+        "https://github.com/ilanvkn/maze-malaysia-way/actions/runs/42167549859",
+        "https://download.geofabrik.de/asia/malaysia-singapore-brunei.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "limitations": [
+        "Pinned community snapshot; active-sprint changes require new review.",
+        "Country datasets are not bundled; source publication is not a complete navigation release.",
+        "Build/JVM/lint/packager results do not establish airplane-mode interaction, full accessibility, route accuracy or physical performance."
+      ],
+      "sha256": "9f8fdf6a3f188553b60fbc32f02f231a31871c3fa7ddd86e17115a5a8ca605e2"
     }
   ],
-  "builtAt": "2026-11-06T03:24:38.282Z"
+  "builtAt": "2026-11-06T05:58:07.618Z"
 }

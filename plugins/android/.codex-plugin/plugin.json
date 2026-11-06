@@ -1,6 +1,6 @@
 {
   "name": "android",
-  "version": "3.2.0-antartica.6",
+  "version": "3.2.0-antartica.7",
   "requires_local_executor": true,
   "description": "Android SDK-native development and evidence atlas: AndroidX UI, project/toolchain inspection, app acceptance and REA-assisted investigation.",
   "skills": "./skills",

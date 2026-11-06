@@ -1,6 +1,6 @@
 # Current coverage and acceptance
 
-Release3.2.0-antartica.6 is a public **community preview** of the V3 line. Major3 and the user's Antartica spelling are preserved. Publishing this package does not close an acceptance gate or certify an operating system.
+Release3.2.0-antartica.7 is a public **community preview** of the V3 line. Major3 and the user's Antartica spelling are preserved. Publishing this package does not close an acceptance gate or certify an operating system.
 
 | Area | Available evidence | Remaining boundary |
 | --- | --- | --- |
@@ -24,3 +24,7 @@ Historical case paths are converted to `case://local/…` locators. Raw research
 5. Reproduce security/transport edge cases without credentials or live third-party targets.
 
 Use Issues for bugs, evidence corrections and feature proposals. Do not replace an unresolved gate with a favorable release number. See V1-ACCEPTANCE.md and V3X-SECURITY.md for historical details.
+
+## Antartica.7 qualification update
+
+The corpus now has52 topics. The new Maze community pipeline lesson pins a public source commit and its successful build/JVM/lint/packager CI; it does not inherit ongoing-sprint runtime results. The reader gate remains open: local-file preview was rejected by the browser automation policy, and no workaround was attempted. Manual results were requested. Use [the reader checklist](READER-CHECKLIST.md) for the actual rendered/assistive evidence still needed.
