@@ -2,7 +2,7 @@
 
 # AV3X Antartica · Android Atlas for Codex
 
-[![Package checks](https://github.com/ilanvkn/av3x-antartica/actions/workflows/check.yml/badge.svg?branch=main)](https://github.com/ilanvkn/av3x-antartica/actions/workflows/check.yml)
+[![Package checks](https://github.com/starkfiber/av3x-antartica/actions/workflows/check.yml/badge.svg?branch=main)](https://github.com/starkfiber/av3x-antartica/actions/workflows/check.yml)
 
 **An evidence-backed Android development companion: reusable skills, a local reference atlas and thirteen read-only MCP tools.**
 
@@ -27,7 +27,7 @@ Use `$android` to build SDK-native apps, investigate an APK with appropriate com
 You need Codex and an existing **Node.js22+**. The atlas/MCP server has no production npm dependencies. Android SDK/JDK17 are needed only when building Android examples.
 
 ```sh
-git clone https://github.com/ilanvkn/av3x-antartica.git
+git clone https://github.com/starkfiber/av3x-antartica.git
 cd av3x-antartica
 codex plugin marketplace add . --json
 codex plugin add android@av3x-antartica --json
@@ -65,7 +65,7 @@ The server reads selected local files and returns bounded data. It does not exec
 
 The [source-only map starter](plugins/android/examples/maze-map) uses Kotlin, Compose and MapLibre Native. It demonstrates Day/Night appearance, compact trip controls, saved routes, small offline areas and bounded service failure handling.
 
-**The included lab server has labelled sample search and recorded road data.** It is not a live routing service. The production variant requires a deliberately configured gateway. Fully offline Malaysia-wide shops/search/routing is an active separate [Maze application](https://github.com/ilanvkn/maze-malaysia-way), with its own data recipes and qualification limits. It is not a capability of the bundled starter. This atlas includes a [pinned community pipeline lesson](plugins/android/atlas/articles/maze-offline-community-pipeline.md). No complete coverage of shops, entrances or exits is claimed.
+**The included lab server has labelled sample search and recorded road data.** It is not a live routing service. The production variant requires a deliberately configured gateway. Fully offline Malaysia-wide shops/search/routing is an active separate [Maze application](https://github.com/starkfiber/maze-malaysia-way), with its own data recipes and qualification limits. It is not a capability of the bundled starter. This atlas includes a [pinned community pipeline lesson](plugins/android/atlas/articles/maze-offline-community-pipeline.md). No complete coverage of shops, entrances or exits is claimed.
 
 ```sh
 node plugins/android/scripts/scaffold.mjs --template maps \
@@ -87,10 +87,10 @@ The M5 experiment did not establish an app-code speedup, physical FPS or energy 
 
 ## Updates and community
 
-Report bugs and missing evidence in [Issues](https://github.com/ilanvkn/av3x-antartica/issues). Include the package version, exact command or tool arguments, expected/observed behavior and a minimal non-sensitive example. Feature requests and evidence corrections are welcome; read [CONTRIBUTING.md](CONTRIBUTING.md).
+Report bugs and missing evidence in [Issues](https://github.com/starkfiber/av3x-antartica/issues). Include the package version, exact command or tool arguments, expected/observed behavior and a minimal non-sensitive example. Feature requests and evidence corrections are welcome; read [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Maintainers review source/provenance changes, regenerate the atlas and run checks before tagging a release. CI tests Node 22/24 on Linux and macOS. No telemetry, automatic device operation or background self-updater is bundled. The project does not edit model weights or automatically learn from users.
 
 Original plugin code, articles and original assets are [MIT licensed](LICENSE). Third-party code, datasets, services and trademarks retain their own terms: [notices](plugins/android/THIRD_PARTY_NOTICES.md).
 
-Related community tools: [Reverse Lab, Apple Blueprint, Thesis Pro and Blender Asset Lab](https://github.com/ilanvkn/codex-engineering-plugins), plus [KSlides](https://github.com/ilanvkn/kslides). Their verification and installation contracts remain separate.
+Related community tools: [Reverse Lab, Apple Blueprint, Thesis Pro and Blender Asset Lab](https://github.com/starkfiber/codex-engineering-plugins), plus [KSlides](https://github.com/ilanvkn/kslides). Their verification and installation contracts remain separate.
